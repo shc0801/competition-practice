@@ -11,7 +11,7 @@ label, button, a { cursor: pointer; user-select: none; }
 button { background-color: transparent; border: none; }
 
 .wrap {
-    max-width: calc(100% - 400px);
+    max-width: calc(100% - 100px);
     margin: 0 auto;
 }
 
@@ -89,4 +89,74 @@ header {
 
 .nav:hover + .nav__background {
     height: 100px;
+}
+
+.hamburger__icon {
+    width: 2em;
+    height: 2em;
+
+    margin-top: 1em;
+}
+
+.hamburger__icon > span {
+    display: block;
+    border-top: 1px solid #555;
+    margin-top: calc(2em / 3);
+    margin-left: auto;
+}
+.hamburger__icon > span:nth-child(1) { width: 2em; margin-top: 0; }
+.hamburger__icon > span:nth-child(2) { width: 1.3em; }
+.hamburger__icon > span:nth-child(3) { width: 2em; }
+
+aside {
+    width: 100%; 
+    height: 100%;
+
+    position: fixed;
+    left: 100%; top: 0;
+    transition: .5s;
+    z-index: 2000;
+}
+#hamburger:checked ~ aside { left: 0%; }
+
+.aside__background {
+    width: 100%; 
+    height: 100%;
+    
+    background-color: #000a;
+
+    position: fixed;
+    left: 0; top: 0;
+    transition: 0.35s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+#hamburger:checked ~ aside .aside__background { opacity: 1; visibility: visible; }
+
+.aside__content {
+    width: 400px; 
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 0; top: 0;
+    transition: 0.35s;
+}
+
+.aside__content { padding-top: 2em; }
+.aside__content .auth { margin-bottom: 1em; } 
+.aside__content .drop { height: auto; line-height: 40px; padding-bottom: 1em; }
+.aside__content .drop__menu {
+    position: static;
+}
+.nav--aside .drop__menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+}
+.nav--aside .drop__menu > a {
+    text-align: left;
+    height: 40px;
 }
