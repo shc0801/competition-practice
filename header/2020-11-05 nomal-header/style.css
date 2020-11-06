@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none !important; }
 p, label { margin-bottom: 0; }
 label, button, a { user-select: none; cursor: pointer; }
 button { background-color: transparent; border: none; }
