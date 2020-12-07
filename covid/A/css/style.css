@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "맑은 고딕", sans-serif;
+}
+
+label, a, button { user-select: none; }
+ul, li { list-style: none; }
+a, a:hover { text-decoration: none; color: inherit; }
+p { margin-bottom: 0; line-height: 2em; }
+
+.wrap { max-width: calc(100% - 5vw); margin: 0 auto; } 
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.pos-center {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bold { font-weight: bold; }
+.lighter { font-weight: lighter; }
+
+.fs-n4 { font-size: 0.75em; }
+.fs-n3 { font-size: 0.85em; }
+.fs-n2 { font-size: 0.9em; }
+.fs-n1 { font-size: 0.95em; }
+
+.fs-1 { font-size: 1.1em; }
+.fs-2 { font-size: 1.2em; }
+.fs-3 { font-size: 1.3em; }
+.fs-4 { font-size: 1.4em; }
+.fs-5 { font-size: 1.5em; }
+.fs-6 { font-size: 1.6em; }
+.fs-7 { font-size: 1.7em; }
+.fs-8 { font-size: 2.5em; }
+
+.text-white { color: #fff; }
+.text-black { color: #333; }
+.text-pale-white { color: #fffb; }
+.text-pale-black { color: #555; }
+.text-muted { color: #aaa; }
+.text-blue { color: #2ca2d1; }
+.text-green { color: #2ab79f; }
+
+.text-shadow { text-shadow: 0 1px 5px #000a; }
+
+/* header */
+
+header { border-top: 3px solid darkcyan; }
+.header-top { height: 60px; }
+.header-center { height: 60px; }
+.header-bottom { height: 30px; }
+
+.utility > a { height: 12px; color: darkcyan; padding: 0 1em; line-height: 12px; }
+.utility > a:first-child { border-right: 1px solid rgb(206, 206, 206); }
+.auth > a { height: 12px; color: #666; padding: 0 1em; line-height: 12px; }
+.auth > a:first-child { border-right: 1px solid rgb(206, 206, 206); }
+
+nav a { 
+    line-height: 100px;
+
+    padding: 0 25px; 
+}
+.nav-item > a { color: #333; font-weight: bold; position: relative; }
+.nav-item > a::before {
+    width: 0;
+    height: 2px;
+    
+    background-color: darkcyan;
+
+    position: absolute;
+    left: 50%; top: 140%;
+    transform: translateX(-50%);
+
+    transition: width .3s;
+     
+    content: "";
+}
+.nav-item:hover > a { color: darkcyan; }
+.nav-item:hover > a::before { width: 60%; }
+
+.dropdown-menu a { font-size: 0.95rem; line-height: 40px;  }
+.nav-item:hover .dropdown-menu, .dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) { 
+    .logo { margin-top: 70px; } 
+}
+
+/* / header */
+
+/* visual */
+
+#visual {
+    width: 100%; 
+    height: 600px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.visual-image { 
+    width: 300%;
+    height: 100%;
+
+    position: absolute;
+    left: 0; top: 0;
+}
+.visual-image img {
+    width: calc(100% / 3);
+    height: 100%;
+    
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.visual-control {
+    width: 100%;
+    height: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 10%;
+}
+
+.control {
+    width: 15px;
+    height: 15px;
+
+    position: relative;
+
+    margin: 0 4px;
+    border: 2px solid #fff;
+}
+
+.control > label {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0; top: 0;
+    transition: .5s;
+
+    cursor: pointer;
+}
+.control > label:hover { background-color: darkcyan; }
+
+@keyframes move-1-2 {
+    0%      { left: -100%; }
+    22.222% { left: -100%; }
+
+    33.333% { left: -200%; }
+    55.555% { left: -200%; }
+
+    66.666% { left: 0%; }
+    88.888% { left: 0%; }
+
+    100%    { left: -100%; }
+}
+@keyframes move-2-3 {
+    0%      { left: -200%; }
+    22.222% { left: -200%; }
+
+    33.333% { left: 0%; }
+    55.555% { left: 0%; }
+
+    66.666% { left: -100%; }
+    88.888% { left: -100%; }
+
+    100%    { left: -200%; }
+}
+@keyframes move-3-1 {
+    0%      { left: 0%; }
+    22.222% { left: 0%; }
+
+    33.333% { left: -100%; }
+    55.555% { left: -100%; }
+
+    66.666% { left: -200%; }
+    88.888% { left: -200%; }
+
+    100%    { left: 0%; }
+}
+
+@keyframes move-1-2-copy {
+    0%      { left: -100%; }
+    22.222% { left: -100%; }
+
+    33.333% { left: -200%; }
+    55.555% { left: -200%; }
+
+    66.666% { left: 0%; }
+    88.888% { left: 0%; }
+
+    100%    { left: -100%; }
+}
+@keyframes move-2-3-copy {
+    0%      { left: -200%; }
+    22.222% { left: -200%; }
+
+    33.333% { left: 0%; }
+    55.555% { left: 0%; }
+
+    66.666% { left: -100%; }
+    88.888% { left: -100%; }
+
+    100%    { left: -200%; }
+}
+@keyframes move-3-1-copy {
+    0%      { left: 0%; }
+    22.222% { left: 0%; }
+
+    33.333% { left: -100%; }
+    55.555% { left: -100%; }
+
+    66.666% { left: -200%; }
+    88.888% { left: -200%; }
+
+    100%    { left: 0%; }
+}
+
+@keyframes move-1-3 {
+    0%   { left: 0%; }
+    100% { left: -200%; }
+}
+@keyframes move-3-2 {
+    0%   { left: -200%; }
+    100% { left: -100%; }
+}
+@keyframes move-2-1 {
+    0%   { left: -100%; }
+    100% { left: 0%; }
+}
+
+@keyframes move-1-3-copy {
+    0%   { left: 0%; }
+    100% { left: -200%; }
+}
+@keyframes move-3-2-copy {
+    0%   { left: -200%; }
+    100% { left: -100%; }
+}
+@keyframes move-2-1-copy {
+    0%   { left: -100%; }
+    100% { left: 0%; }
+}
+
+.visual-image { 
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-delay: calc(-9s + 1s);
+}
+
+#move-1-2:checked ~ #visual > .visual-image { animation-name: move-1-2; }
+#move-2-3:checked ~ #visual > .visual-image { animation-name: move-2-3; }
+#move-3-1:checked ~ #visual > .visual-image { animation-name: move-3-1; }
+
+#move-1-3:checked ~ #visual > .visual-image { animation-name: move-1-3, move-2-3; }
+#move-3-2:checked ~ #visual > .visual-image { animation-name: move-3-2, move-1-2; }
+#move-2-1:checked ~ #visual > .visual-image { animation-name: move-2-1, move-3-1; }
+
+#move-1-3:checked ~ #visual > .visual-image,
+#move-3-2:checked ~ #visual > .visual-image,
+#move-2-1:checked ~ #visual > .visual-image {
+    animation-duration: 1s, 9s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 1s;
+}
+
+#move-1-2-copy:checked ~ #visual > .visual-image { animation-name: move-1-2-copy; }
+#move-2-3-copy:checked ~ #visual > .visual-image { animation-name: move-2-3-copy; }
+#move-3-1-copy:checked ~ #visual > .visual-image { animation-name: move-3-1-copy; }
+
+#move-1-3-copy:checked ~ #visual > .visual-image { animation-name: move-1-3-copy, move-2-3-copy; }
+#move-3-2-copy:checked ~ #visual > .visual-image { animation-name: move-3-2-copy, move-1-2-copy; }
+#move-2-1-copy:checked ~ #visual > .visual-image { animation-name: move-2-1-copy, move-3-1-copy; }
+
+#move-1-3-copy:checked ~ #visual > .visual-image,
+#move-3-2-copy:checked ~ #visual > .visual-image,
+#move-2-1-copy:checked ~ #visual > .visual-image {
+    animation-duration: 1s, 9s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 1s;
+}
+
+@keyframes label-1 {
+    0%      { z-index: 1; }
+    22.222% { z-index: 1; }
+
+    33.333% { z-index: 0; }
+    55.555% { z-index: 0; }
+
+    66.666% { z-index: 0; }
+    88.888% { z-index: 0; }
+
+    100%    { z-index: 1; }
+}
+@keyframes label-2 {
+    0%      { z-index: 0; }
+    22.222% { z-index: 0; }
+
+    33.333% { z-index: 1; }
+    55.555% { z-index: 1; }
+
+    66.666% { z-index: 0; }
+    88.888% { z-index: 0; }
+
+    100%    { z-index: 0; }
+}
+@keyframes label-3 {
+    0%      { z-index: 0; }
+    22.222% { z-index: 0; }
+
+    33.333% { z-index: 0; }
+    55.555% { z-index: 0; }
+
+    66.666% { z-index: 1; }
+    88.888% { z-index: 1; }
+
+    100%    { z-index: 0; }
+}
+
+.control label {
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+#move-2-1:checked ~ #visual .label-1-copy { animation-name: label-1; }
+#move-2-1:checked ~ #visual .label-2-copy { animation-name: label-2; }
+#move-2-1:checked ~ #visual .label-3-copy { animation-name: label-3; }
+
+#move-3-1:checked ~ #visual .label-1-copy { animation-name: label-1; }
+#move-3-1:checked ~ #visual .label-2-copy { animation-name: label-2; }
+#move-3-1:checked ~ #visual .label-3-copy { animation-name: label-3; }
+
+
+#move-1-2:checked ~ #visual .label-1-copy { animation-name: label-3; }
+#move-1-2:checked ~ #visual .label-2-copy { animation-name: label-1; }
+#move-1-2:checked ~ #visual .label-3-copy { animation-name: label-2; }
+
+#move-3-2:checked ~ #visual .label-1-copy { animation-name: label-3; }
+#move-3-2:checked ~ #visual .label-2-copy { animation-name: label-1; }
+#move-3-2:checked ~ #visual .label-3-copy { animation-name: label-2; }
+
+
+#move-1-3:checked ~ #visual .label-1-copy { animation-name: label-2; }
+#move-1-3:checked ~ #visual .label-2-copy { animation-name: label-3; }
+#move-1-3:checked ~ #visual .label-3-copy { animation-name: label-1; }
+
+#move-2-3:checked ~ #visual .label-1-copy { animation-name: label-2; }
+#move-2-3:checked ~ #visual .label-2-copy { animation-name: label-3; }
+#move-2-3:checked ~ #visual .label-3-copy { animation-name: label-1; }
+
+
+
+#move-2-1-copy:checked ~ #visual .label-1 { animation-name: label-1; }
+#move-2-1-copy:checked ~ #visual .label-2 { animation-name: label-2; }
+#move-2-1-copy:checked ~ #visual .label-3 { animation-name: label-3; }
+
+#move-3-1-copy:checked ~ #visual .label-1 { animation-name: label-1; }
+#move-3-1-copy:checked ~ #visual .label-2 { animation-name: label-2; }
+#move-3-1-copy:checked ~ #visual .label-3 { animation-name: label-3; }
+
+
+#move-1-2-copy:checked ~ #visual .label-1 { animation-name: label-3; }
+#move-1-2-copy:checked ~ #visual .label-2 { animation-name: label-1; }
+#move-1-2-copy:checked ~ #visual .label-3 { animation-name: label-2; }
+
+#move-3-2-copy:checked ~ #visual .label-1 { animation-name: label-3; }
+#move-3-2-copy:checked ~ #visual .label-2 { animation-name: label-1; }
+#move-3-2-copy:checked ~ #visual .label-3 { animation-name: label-2; }
+
+
+#move-1-3-copy:checked ~ #visual .label-1 { animation-name: label-2; }
+#move-1-3-copy:checked ~ #visual .label-2 { animation-name: label-3; }
+#move-1-3-copy:checked ~ #visual .label-3 { animation-name: label-1; }
+
+#move-2-3-copy:checked ~ #visual .label-1 { animation-name: label-2; }
+#move-2-3-copy:checked ~ #visual .label-2 { animation-name: label-3; }
+#move-2-3-copy:checked ~ #visual .label-3 { animation-name: label-1; }
+
+/* session */
+
+.table-wrap {
+    width: calc(100vw - 35vw);
+
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+    padding: 40px 0 30px;
+    background-color: #222;
+}

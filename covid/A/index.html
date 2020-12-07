@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid-19</title>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top wrap flex-between d-none d-lg-flex">
+            <div class="utility d-flex fs-n4 bold">
+                <a href="#">사이트맵</a>
+                <a href="#">공지사항</a>
+            </div>
+            <div class="auth d-flex fs-n4 bold">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+        <div class="header-center flex-center">
+            <a class="logo mb-5" href="#">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-bottom flex-center d-none d-lg-flex">
+            <nav class="d-flex mr-5">
+                <div class="nav-item position-relative">
+                    <a href="#">COVID 19</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">코로나 바로알기</a>
+                        <a href="#" class="dropdown-item">환자 치료 및 관리</a>
+                    </div>
+                </div>
+                <div class="nav-item position-relative">
+                    <a href="#">감염 현황</a>
+                </div>
+                <div class="nav-item position-relative">
+                    <a href="#">지침사항</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">일반인</a>
+                        <a href="#" class="dropdown-item">입국인 및 해외여행객</a>
+                        <a href="#" class="dropdown-item">자가격리자</a>
+                        <a href="#" class="dropdown-item">기업 및 시장</a>
+                    </div>
+                </div>
+                <div class="nav-item position-relative">
+                    <a href="#">시민 참여</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">시민 우편함</a>
+                        <a href="#" class="dropdown-item">잠시 멈춤 캠페인</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <input type="radio" name="control" id="move-1-2" hidden>
+    <input type="radio" name="control" id="move-1-3" hidden>
+    <input type="radio" name="control" id="move-2-1" hidden>
+    <input type="radio" name="control" id="move-2-3" hidden>
+    <input type="radio" name="control" id="move-3-1" hidden checked>
+    <input type="radio" name="control" id="move-3-2" hidden>
+    
+    <input type="radio" name="control" id="move-1-2-copy" hidden>
+    <input type="radio" name="control" id="move-1-3-copy" hidden>
+    <input type="radio" name="control" id="move-2-1-copy" hidden>
+    <input type="radio" name="control" id="move-2-3-copy" hidden>
+    <input type="radio" name="control" id="move-3-1-copy" hidden>
+    <input type="radio" name="control" id="move-3-2-copy" hidden>
+
+    <div id="visual" class="wrap overflow-hidden mt-3">
+        <div class="visual-image d-flex">
+            <img src="./images/visual-md-1.png" alt="visual-image">
+            <img src="./images/visual-md-2.png" alt="visual-image">
+            <img src="./images/visual-md-3.png" alt="visual-image">
+        </div>
+        <div class="visual-text pos-center text-center">
+            <span class="fs-8 bold text-white text-shadow">코로나 19, 이겨 낼 수 있습니다.</span>
+
+            <p class="text-white fs-1 pt-5 text-shadow">모두가 힘을 합치면 어떤 것이든 이루어 낼 수 있습니다. <br>
+                코로나에 맞서 최전방에서 싸우시는 모든 의료진 · 공무원 분들을 응원합니다.</p>
+        </div>
+        <div class="visual-control">
+            <div class="control">
+                <label for="" class="label-1"></label>
+                <label for="move-2-1" class="label-2"></label>
+                <label for="move-3-1" class="label-3"></label>
+                
+                <!-- copy -->
+
+                <label for="" class="label-1-copy"></label>
+                <label for="move-2-1" class="label-2-copy"></label>
+                <label for="move-3-1" class="label-3-copy"></label>
+            </div>
+            <div class="control">
+                <label for="move-1-2"  class="label-1"></label>
+                <label for="" class="label-2"></label>
+                <label for="move-3-2" class="label-3"></label>
+                
+                <!-- copy -->
+
+                <label for="move-1-2"  class="label-1-copy"></label>
+                <label for="" class="label-2-copy"></label>
+                <label for="move-3-2" class="label-3-copy"></label>
+            </div>
+            <div class="control">
+                <label for="move-1-3" class="label-1"></label>
+                <label for="move-2-3" class="label-2"></label>
+                <label for="" class="label-3"></label>
+                
+                <!-- copy -->
+
+                <label for="move-1-3" class="label-1-copy"></label>
+                <label for="move-2-3" class="label-2-copy"></label>
+                <label for="" class="label-3-copy"></label>
+            </div>
+        </div>
+    </div>
+    <div id="table" class="mt-4 pt-5 pb-5">
+        <div class="flex-col align-items-center">
+            <div class="table-wrap text-center">
+                <h3 class="fs-5 bold">실시간 감염 현황</h3>
+                <span class="fs-n4 lighter">현 코로나 바이러스 감염 양상</span>
+            </div>
+            <div class="container flex-center">
+                <div class="col-lg-8 col-10 col-sm-12 pt-4">
+                    <div class="fs-4">
+                        <span class="bold text-green fs-n1">국내</span>
+                        <span class="lighter text-muted fs-n4">INTERNAL</span>
+                    </div>
+                    <hr class="mt-2 mb-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">확진자 수</div>
+                            <div class="fs-6 text-black mt-1">10,801</div>
+                            <fs-n1 class="text-blue">(+8)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">격리해제 수</div>
+                            <div class="fs-6 text-black mt-1">9,217</div>
+                            <fs-n1 class="text-blue">(+34)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">사망자 수</div>
+                            <div class="fs-6 text-black mt-1">252</div>
+                            <fs-n1 class="text-blue">(+2)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">치사율</div>
+                            <div class="fs-6 text-black mt-1">2.33%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="fs-4 mt-4">
+                        <span class="bold text-blue fs-n1">국외</span>
+                        <span class="lighter text-muted fs-n4">EXTERNAL</span>
+                    </div>
+                    <hr class="mt-2 mb-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">확진자 수</div>
+                            <div class="fs-6 text-black mt-1">10,801</div>
+                            <fs-n1 class="text-blue">(+8)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">격리해제 수</div>
+                            <div class="fs-6 text-black mt-1">9,217</div>
+                            <fs-n1 class="text-blue">(+34)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">사망자 수</div>
+                            <div class="fs-6 text-black mt-1">252</div>
+                            <fs-n1 class="text-blue">(+2)</fs-n1>
+                        </div>
+                        <div class="col-lg-3 col-6 flex-center flex-col mt-3">
+                            <div class="fs-1 text-pale-black">치사율</div>
+                            <div class="fs-6 text-black mt-1">2.33%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-4 d-none d-lg-flex mt-3">
+                    <img src="./images/Wlogo.png" alt="COVID 1339">
+                </div>
+                <div class="col-lg-8 col-12 mt-lg-4">
+                    <div class="d-flex fs-n2 text-pale-white">
+                        <div class="col-3">
+                            <div class="text-white text-center text-lg-left">COVID 19</div>
+                            <div class="text-pale-white d-none d-lg-flex mt-3"> 
+                                <a href="sub1.html">코로나 바로알기</a>
+                            </div>
+                            <div class="text-pale-white d-none d-lg-flex mt-2"> 
+                                <a href="sub2.html">환자 치료 및 관리</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-white text-center text-lg-left">감염 현황</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-white text-center text-lg-left">지침 사항</div>
+                            <div class="text-pale-white d-none d-lg-flex mt-3"> 
+                                <a href="#">일반인</a>
+                            </div>
+                            <div class="text-pale-white d-none d-lg-flex mt-2"> 
+                                <a href="#">입국인 및 해외여행객</a>
+                            </div>
+                            <div class="text-pale-white d-none d-lg-flex mt-2"> 
+                                <a href="#">자가격리자</a>
+                            </div>
+                            <div class="text-pale-white d-none d-lg-flex mt-2"> 
+                                <a href="#">기업 및 시장</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-white text-center text-lg-left">시민 참여</div>
+                            <div class="text-pale-white d-none d-lg-flex mt-3"> 
+                                <a href="#">시민 우편함</a>
+                            </div>
+                            <div class="text-pale-white d-none d-lg-flex mt-2"> 
+                                <a href="#">잠시 멈춤 캠페인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-pale-white mt-4 fs-n3 text-center text-lg-left">ⓒ Copylight COVID 1339 All Rights resolved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
