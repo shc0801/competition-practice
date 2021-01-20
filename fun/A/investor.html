@@ -14,14 +14,14 @@
         <div class="header-top d-lg-flex d-none flex-col">
             <div class="auth mr-3 flex-end">
                 <a class="header-btn mx-1" href="#">로그인</a>
-                <a class="header-btn mx-1" href="#">회원가입</a>
+                <a class="header-btn mx-1" href="./join.html">회원가입</a>
                 <a class="header-btn mx-1" href="#">관리자</a>
             </div>
         </div>
         <div class="header-bottom flex-between">
-            <div class="logo">
+            <a href="./index.html" class="logo">
                 <img src="./images/logo.png" alt="logo" height="35">
-            </div>
+            </a>
             <nav class="d-lg-flex d-none">
                 <div class="nav-item">
                     <a class="lighter" href="./index.html">메인페이지</a>
@@ -30,7 +30,7 @@
                     <a class="lighter" href="./register.html">펀드등록</a>
                 </div>
                 <div class="nav-item">
-                    <a class="lighter" href="#">펀드보기</a>
+                    <a class="lighter" href="./view.html">펀드보기</a>
                 </div>
                 <div class="nav-item">
                     <a class="lighter" href="./investor.html">투자자목록</a>
@@ -48,18 +48,18 @@
         <div class="aside-content px-4">
             <div class="auth flex-end">
                 <a class="header-btn mx-1 fs-n4" href="#">로그인</a>
-                <a class="header-btn mx-1 fs-n4" href="#">회원가입</a>
+                <a class="header-btn mx-1 fs-n4" href="./join.html">회원가입</a>
                 <a class="header-btn mx-1 fs-n4" href="#">관리자</a>
             </div>
             <nav class="mt-4">
                 <div class="nav-item my-3">
-                    <a href="#">메인페이지</a>
+                    <a href="./index.html">메인페이지</a>
                 </div>
                 <div class="nav-item my-3">
                     <a href="./register.html">펀드등록</a>
                 </div>
                 <div class="nav-item my-3">
-                    <a href="#">펀드보기</a>
+                    <a href="./view.html">펀드보기</a>
                 </div>
                 <div class="nav-item my-3">
                     <a href="./investor.html">투자자목록</a>
@@ -84,129 +84,142 @@
         </div>
     </div>
 
-    <div id="view-fund" class="py-5">
+    <div id="investor-fund" class="py-5">
         <div class="container">
             <div class="header flex-col-center">
                 <i class="fa fa-user"></i>
                 <h2 class="bold">investor <span>View</span></h2>
                 <p>다른 투자자 분들은 어떨까요?</p>
             </div>
-            <div class="list pt-3">
-                <div class="t-head pb-2">
-                    <div class="cell-20">
-                        <span>펀드번호</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>창업펀드명</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>투자자명</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>투자금액</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>펀드지분</span>
-                    </div>
-                </div>
-                <div class="t-row pt-3">
-                    <div class="cell-20">
-                        <span>A0002</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>게임개발 자금 모집</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>황성철</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>20000원</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>40%</span>
-                    </div>
-                    <div class="cell-15">
-                        <button class="blue-btn">상세보기</button>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header flex-between">
+                            <span class="text-gray">A0002</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">게임개발 자금 모집</p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2">황성철</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2">20000원</span>
+                                <small class="text-gray">( 100% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer flex-center">
+                            <button class="w-100 blue-btn">상세보기</button>
+                        </div>
                     </div>
                 </div>
-                <div class="t-row pt-3">
-                    <div class="cell-20">
-                        <span>A0001</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>환경 친화적인 비닐개발</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>김민재</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>5000원</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>0.5%</span>
-                    </div>
-                    <div class="cell-15">
-                        <button class="blue-btn">상세보기</button>
-                    </div>
-                </div>
-                <div class="t-row pt-3">
-                    <div class="cell-20">
-                        <span>A0005</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>기능반 간식비 프로젝트</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>조예진</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>500원</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>0.05%</span>
-                    </div>
-                    <div class="cell-15">
-                        <button class="blue-btn">상세보기</button>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header flex-between">
+                            <span class="text-gray">A0001</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">환경 친화적인 비닐개발</p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2">김민재</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2">500원</span>
+                                <small class="text-gray">( 50% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer flex-center">
+                            <button class="w-100 blue-btn">상세보기</button>
+                        </div>
                     </div>
                 </div>
-                <div class="t-row pt-3">
-                    <div class="cell-20">
-                        <span>A0004</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>자바 공부 교재 개발하기</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>연지수</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>0원</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>0%</span>
-                    </div>
-                    <div class="cell-15">
-                        <button class="blue-btn">상세보기</button>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header flex-between">
+                            <span class="text-gray">A0005</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">기능반 간식비 프로젝트</p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2">조예진</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2">300원</span>
+                                <small class="text-gray">( 60% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer flex-center">
+                            <button class="w-100 blue-btn">상세보기</button>
+                        </div>
                     </div>
                 </div>
-                <div class="t-row pt-3">
-                    <div class="cell-20">
-                        <span>A0004</span>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header flex-between">
+                            <span class="text-gray">A0005</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">기능반 간식비 프로젝트</p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2">연지수</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2">100원</span>
+                                <small class="text-gray">( 20% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer flex-center">
+                            <button class="w-100 blue-btn">상세보기</button>
+                        </div>
                     </div>
-                    <div class="cell-20">
-                        <span>자바 공부 교재 개발하기</span>
-                    </div>
-                    <div class="cell-20">
-                        <span>이지선</span>
-                    </div>
-                    <div class="cell-10">
-                        <span>0원</span>
-                    </div>
-                    <div class="cell-15">
-                        <span>0%</span>
-                    </div>
-                    <div class="cell-15">
-                        <button class="blue-btn">상세보기</button>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header flex-between">
+                            <span class="text-gray">A0005</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">기능반 간식비 프로젝트</p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2">신지선</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2">100원</span>
+                                <small class="text-gray">( 20% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer flex-center">
+                            <button class="w-100 blue-btn">상세보기</button>
+                        </div>
                     </div>
                 </div>
             </div>

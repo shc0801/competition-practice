@@ -29,6 +29,7 @@ p { margin-bottom: 0; line-height: 2em; }
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
+.progress-bar { background-color: #52616a !important; }
 
 .flex-end { align-self: flex-end; }
 
@@ -56,6 +57,9 @@ p { margin-bottom: 0; line-height: 2em; }
 .text-blue { color: #52616a; }
 .text-gray { color: #6c757d; }
 
+.text-over { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.t-head { border-bottom: 3px solid #52616a; }
 .t-head, .t-row { display: flex; align-self: center; text-align: center; }
 .t-row { min-height: 50px; padding: 0.5em 0; border-bottom: 1px solid #ddd; }
 .t-row span { color: #52616a; } 
@@ -215,14 +219,13 @@ aside {
 
 /* > visual */
 
-/* < view fund */
+/* < best fund */
 
-#view-fund { background-color: #f7f7f7; }
-#view-fund .t-head { border-bottom: 3px solid #52616a; }
+#best-fund { background-color: #f7f7f7; }
 
 .fund-background { height: 200px; background-color: rgb(204, 103, 61); }
 
-/* view-fund > */
+/* best-fund > */
 
 /* < footer */
 
