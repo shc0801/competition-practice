@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <script src="./js/Register.js"></script>
+</head>
+<body>
+    <input id="open-aside" type="checkbox" hidden>
+    <header class="container ">
+        <div class="header-top d-lg-flex d-none flex-col">
+            <div class="auth mr-3 flex-end">
+                <a class="header-btn mx-1" href="#">로그인</a>
+                <a class="header-btn mx-1" href="./join.html">회원가입</a>
+                <a class="header-btn mx-1" href="#">관리자</a>
+            </div>
+        </div>
+        <div class="header-bottom flex-between">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="logo" height="35">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item">
+                    <a class="lighter" href="./index.html">메인페이지</a>
+                </div>
+                <div class="nav-item">
+                    <a class="lighter" href="./register.html">펀드등록</a>
+                </div>
+                <div class="nav-item">
+                    <a class="lighter" href="./view.html">펀드보기</a>
+                </div>
+                <div class="nav-item">
+                    <a class="lighter" href="./investor.html">투자자목록</a>
+                </div>
+            </nav>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="auth flex-end">
+                <a class="header-btn mx-1 fs-n4" href="#">로그인</a>
+                <a class="header-btn mx-1 fs-n4" href="./join.html">회원가입</a>
+                <a class="header-btn mx-1 fs-n4" href="#">관리자</a>
+            </div>
+            <nav class="mt-4">
+                <div class="nav-item my-3">
+                    <a href="./index.html">메인페이지</a>
+                </div>
+                <div class="nav-item my-3">
+                    <a href="./register.html">펀드등록</a>
+                </div>
+                <div class="nav-item my-3">
+                    <a href="./view.html">펀드보기</a>
+                </div>
+                <div class="nav-item my-3">
+                    <a href="./investor.html">투자자목록</a>
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="sub-visual" class="position-relative">
+        <div class="w-100 h-100 navigation-image">
+            <img class="background-image" src="./images/sample10.jpg" alt="">
+        </div>
+        <div class="pos-center text-center">
+            <div class="fs-9 text-white lighter">펀드등록</div>
+            <div class="fs-n1 text-white lighter mt-2">
+                킥스타터 펀드
+                <i class="fa fa-angle-right mx-1"></i>
+                메인페이지
+                <i class="fa fa-angle-right mx-1"></i>
+                펀드등록
+            </div>
+        </div>
+    </div>
+
+    <div id="register-fund" class="py-5">
+        <div class="container">
+            <form action="#">
+                <div class="form-group">
+                    <label for="register_num" class="py-1 pl-2 mb-1 fs-2 text-blue">펀드번호</label>
+                    <input type="text" name="fund_num" id="register_num" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="register_name" class="py-1 pl-2 mb-1 fs-2 text-blue">창업펀드명</label>
+                    <input type="text" name="fund_name" id="register_name" class="form-control" placeholder="펀드명을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="register_endDate" class="py-1 pl-2 mb-1 fs-2 text-blue">모집마감일</label>
+                    <input type="date" name="fund_endDate" id="register_endDate" class="form-control my-1" required>
+                    <input type="time" name="fund_endDate_time" id="register_endDate_time" step="5" class="form-control my-1" required>
+                </div>
+                <div class="form-group">
+                    <label for="register_total" class="py-1 pl-2 mb-1 fs-2 text-blue">모집금액</label>
+                    <input type="number" name="fund_total" id="register_total" class="form-control" placeholder="모집금액을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="register_text" class="py-1 pl-2 mb-1 fs-2 text-blue">상세설명</label>
+                    <textarea id="register_text" name="fund_text" class="form-control" cols="30" rows="10" placeholder="상세설명..."></textarea required>
+                </div>
+                <div class="form-group">
+                    <label for="register_file" class="py-1 pl-2 mb-1 fs-2 text-blue">펀드이미지</label>
+                    <div class="custom-file">
+                        <input type="file" name="fund_image" id="register_file" class="custom-file-input" required>
+                        <label class="custom-file-label" for="">파일을 업로드 해주세요</label>
+                    </div>
+                </div>
+                <div class="form-group flex-col pt-2">
+                    <button id="register_submit" class="blue-btn flex-end">펀드등록</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="toast">
+        <div class="toast-header">
+            <strong class="fs-1 text-blue">form 오류</strong>
+          </div>
+        <div class="toast-body px-3 py-5 text-blue">입력하신 정보가 양식과 일치하지 않습니다.</div>
+    </div>
+    
+    <footer>
+        <div class="container h-100 flex-center">
+            <p class="m-0">Copyright Gondr Allright reserved. Since 2017-03-01</p>
+        </div>
+    </footer>
+</body>
+</html>
