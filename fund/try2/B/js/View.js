@@ -54,12 +54,12 @@ class App {
                                 </div>
                             </div>`;
         if(new Date(item.endDate) < new Date()) {
-            div.querySelector(".card-footer").innerHTML = `<button class="blue-btn w-100" data-toggle="modal" data-target="#investor-view-modal" data-id=${item.idx} value="<?=$fund->$fund_num?>">투자하기</button>`
+            div.querySelector(".card-footer").innerHTML = `<button class="blue-btn w-100" data-toggle="modal" data-target="#invest-modal" data-id=${item.idx} value="<?=$fund->$fund_num?>">투자하기</button>`
         }
 
         this.fund.appendChild(div)
-
-        div.querySelector("button").addEventListener("click", e =>{ this.modal(e) });
+        
+        div.querySelector("button").addEventListener("click", (e) => this.modal(e));
     }
 
     modal(e) {
@@ -72,25 +72,96 @@ class App {
         num.value = this.data[id].number;
         name.value = this.data[id].name;
 
-        console.log(num, name)
-
         document.querySelector("#invest_price").addEventListener("input", e => {
-            e.target.value = e.target.value < 0 ? 0 : e.target.value;
+            if(e.target.value < 0) {
+                e.target.setCustomValidity("자연수만 입력할 수 있습니다");
+                e.target.reportValidity();
+                e.target.value = 0;
+            } else {
+                e.target.setCustomValidity("");
+                e.target.reportValidity();
+            }
         });
 
         let closeBtn = document.querySelector("#invest-modal button");
         closeBtn.addEventListener("click", () => { $("#invest-modal").modal("hide") });
 
         document.querySelector("#invest_submit").addEventListener("click", () => {
-            // if(price.value == "") 
-            //     $(".toast").toast
+            if(price.value == "") 
+                this.showToast();
         })
 
         this.signature();
     }
 
+    showToast() {
+        let id = new Date().getTime();
+        let toast = `<div class="toast"id=${id}>
+                        <div class="toast-header flex-between">
+                            <strong>form 오류</strong>
+                            <button type="button" class="close">x</button>
+                        </div>
+                        <div class="toast-body">
+                            입력하신 정보가 양식과 일치하지 않습니다.
+                        </div>
+                    </div>`;
+        $("#toast-container").append(toast);
+        $(`#${id}`).toast({
+            autohide: true,
+            delay: 3000
+        });
+        $(`#${id} button`).on('click', function () {
+            $(`#${id}`).remove();
+        });
+        $(`#${id}`).toast('show');
+    }
+
+
     signature() {
+        this.canvas = $("canvas");
+        this.ctx = this.canvas[0].getContext("2d");
+        this.flag = false;
+        this.ctx.clearRect(0, 0, 450, 150);
+
+        this.canvas[0].addEventListener("mousedown", e => {
+            this.thick = document.querySelector("#thick").value;
+            this.ctx.lineWidth = this.thick;
+
+            const { x, y } = this.getXY(e);
+            this.ctx.beginPath();
+            this.ctx.moveTo(x, y);
+            this.flag = true;
+        })
         
+        this.canvas[0].addEventListener("mousemove", e => {
+            if(this.flag) {
+                const { x, y } = this.getXY(e);
+                this.ctx.lineTo(x, y);
+                this.ctx.stroke();
+            }
+        })
+        
+        this.canvas[0].addEventListener("mouseup", e => {
+            if(this.flag) {
+                const { x, y } = this.getXY(e);
+                this.ctx.lineTo(x, y);
+                this.ctx.stroke();
+                this.flag = false;
+            }
+        })
+    }
+
+    getXY({pageX, pageY}) {
+        let { left, top } = this.canvas.offset();
+        let { width, height } = this.canvas[0];
+
+        let x = pageX - left;
+        x = x > width ? width : x < 0 ? 0 : x;
+
+        let y = pageY - top;
+        y = y > height ? height : y < 0 ? 0 : y;
+
+        return { x: x, y: y }
     }
 
     loading() {

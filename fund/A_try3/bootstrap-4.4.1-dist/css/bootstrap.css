@@ -5852,9 +5852,6 @@ a.close.disabled {
   backdrop-filter: blur(10px);
   opacity: 0;
   border-radius: 0.25rem;
-  position: fixed;
-  right: 5vw; bottom: 5vh;
-  z-index: 10000;
 }
 
 .toast:not(:last-child) {

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header class="container">
+        <div class="header-top d-lg-flex d-none flex-col">
+            <div class="auth mr-3 flex-end">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+        </div>
+        <div class="header-bottom flex-between">
+            <div class="logo"><img src="./images/logo.png" alt="logo" height="35"></div>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item"><a class="lighter" href="./index.html">메인페이지</a></div>
+                <div class="nav-item"><a class="lighter" href="./register.html">펀드등록</a></div>
+                <div class="nav-item"><a class="lighter" href="./view.html">펀드보기</a></div>
+                <div class="nav-item"><a class="lighter" href="./investor.html">방문자목록</a></div>
+            </nav>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="auth">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+            <nav class="mt-2">
+                <div class="nav-item py-3"><a class="lighter" href="./index.html">메인페이지</a></div>
+                <div class="nav-item py-3"><a class="lighter" href="./register.html">펀드등록</a></div>
+                <div class="nav-item py-3"><a class="lighter" href="./view.html">펀드보기</a></div>
+                <div class="nav-item py-3"><a class="lighter" href="./investor.html">방문자목록</a></div>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/sample10.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">펀드보기</div>
+                <div class="fs-n1 pt-2">
+                    킥스타터 펀드 
+                    <i class="fa fa-angle-right mx-1"></i>
+                    메인페이지 
+                    <i class="fa fa-angle-right mx-1"></i>
+                    펀드보기
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="investor-fund" class="py-5">
+        <div class="container">
+            <div class="header flex-col-center">
+                <i class="fa fa-bar-chart"></i>
+                <h2>investor <span>View</span></h2>
+                <p>어떤 투자자분들이 계실까요?</p>
+            </div>
+            <div class="mt-2">
+                <form action="/investor" class="flex-col">
+                    <select class="flex-end">
+                        <option value="fund_name">펀드별</option>
+                        <option value="name">개인별</option>
+                        <option value="datetime">최근등록</option>
+                    </select>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 py-4 px-3">
+                    <div class="card">
+                        <div class="card-header flex-col">
+                            <span class="flex-end">A0001</span>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <small class="text-gray">창업펀드명</small>
+                                <p class="ml-2 mb-0">환경 친화적인 비닐개발</p>
+                                <small class="text-gray">~ 2019-07-05 17:00:30</small>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자자명</small>
+                                <span class="ml-2 mb-0">abc@13.com</span>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <span class="ml-2 mb-0">5,000원</span>
+                                <small class="text-gray">( 10% )</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="sign-btn sign-btn-<?=$i?> blue-btn w-100">투자펀드계약서</button>
+                            <input type="hidden" name="fund_num" class="fund_num" value="<?=$investor->fund_num?>">
+                            <input type="hidden" name="fund_name" class="fund_name" value="<?=$investor->fund_name?>">
+                            <input type="hidden" name="name" class="name" value="<?=$investor->name?>">
+                            <input type="hidden" name="pay" class="pay" value="<?=$investor->pay?>">
+                            <input type="hidden" name="sign" class="sign" value="<?=$investor->sign?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 flex-center">
+                <a class="py-2 px-3 blue-btn" href="#">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="py-2 px-3 btn-filled" href="#">
+                    1
+                </a>
+                <a class="py-2 px-3 blue-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container h-100 flex-center">
+            <p class="m-0 py-2">Copyright Gondr Allright reserved. Since 2017-03-01</p>
+        </div>
+    </footer>
+</body>
+</html>

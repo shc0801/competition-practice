@@ -67,7 +67,7 @@ class View {
     modal(e) {
         let id = e.target.dataset.id;
 
-        let num = document.querySelector("#invest_num");
+        let num = document.querySelector("#invest_num"); 
         let name = document.querySelector("#invest_name");
         let price = document.querySelector("#invest_price");
         num.value = this.data[id].number;

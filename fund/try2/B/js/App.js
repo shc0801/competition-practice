@@ -23,7 +23,7 @@ class App {
         return item.toLocaleString("ko-KR");
     }
 
-    addItem(item) {
+    addItem(item) { 
         let div = document.createElement("div");
         div.classList.add("col-lg-3");
         div.classList.add("col-md-6");
