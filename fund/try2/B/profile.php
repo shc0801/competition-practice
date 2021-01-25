@@ -133,7 +133,7 @@
                     <div class="cell-25 flex-center"><span>사업이름</span></div>
                 </div>
                 <?php foreach($business as $fund): ?>
-                <div class="t-head mt-3 pb-2">
+                <div class="t-row mt-3 pb-2">
                     <div class="cell-25 flex-center"><span><?=$fund->id?></span></div>
                     <div class="cell-25 flex-center"><span><?=$fund->business_name?></span></div>
                 </div>
