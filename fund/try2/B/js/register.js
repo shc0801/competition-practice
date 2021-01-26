@@ -6,7 +6,6 @@ class Register {
     init() {
         this.numberCreate();
 
-        let num = document.querySelector("#register_num");
         let name = document.querySelector("#register_name");
         let endDate = document.querySelector("#register_endDate");
         let endDateTime = document.querySelector("#register_endDateTime");

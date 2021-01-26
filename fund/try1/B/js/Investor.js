@@ -25,6 +25,16 @@ class Investor {
                     this.investorList.push(inv);
             })
         }); 
+        this.investorList.sort(function(a, b) {
+            console.log(a.datetime, b.datetime)
+            if(new Date(a.datetime) < new Date(b.datetime)) {
+                return 1
+            }
+            else if(new Date(a.datetime) > new Date(b.datetime)) {
+                return -1
+            }
+            return 0;
+        })
         this.investorList.forEach(item => this.addItem(item));
 
         this.addEvent();
@@ -47,7 +57,7 @@ class Investor {
                                 <div class="card-body">
                                     <div class="mt-2">
                                         <small class="text-gray">이메일</small>
-                                        <span class="ml-2">${item.email}원</span>
+                                        <span class="ml-2">${item.email}</span>
                                     </div>
                                     <div class="mt-2">
                                         <small class="text-gray">최근 투자일</small>

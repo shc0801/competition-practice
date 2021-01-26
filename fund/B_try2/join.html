@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header class="container">
+        <div class="header-top d-lg-flex d-none flex-col">
+            <div class="auth mr-3 flex-end">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+        </div>
+        <div class="header-bottom flex-between">
+            <div class="logo"><img src="./images/logo.png" alt="logo" height="35"></div>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item"><a href="./index.html" class="lighter">메인페이지</a></div>
+                <div class="nav-item"><a href="./register.html" class="lighter">펀드등록</a></div>
+                <div class="nav-item"><a href="./view.html" class="lighter">펀드보기</a></div>
+                <div class="nav-item"><a href="./investor.html" class="lighter">투자자목록</a></div>
+            </nav>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="auth">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+            <nav class="mt-2">
+                <div class="nav-item py-3"><a href="./index.html" class="lighter">메인페이지</a></div>
+                <div class="nav-item py-3"><a href="./register.html" class="lighter">펀드등록</a></div>
+                <div class="nav-item py-3"><a href="./view.html" class="lighter"></a>펀드보기</div>
+                <div class="nav-item py-3"><a href="./investor.html" class="lighter">투자자목록</a></div>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/sample10.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">회원가입</div>
+                <div class="fs-1 my-2">
+                    킥스타터
+                    <i class="fa fa-angle-right mx-1"></i>
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    회원가입
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="join" class="py-5">
+        <div class="container">
+            <form action="/join" method="post">
+                <div class="form-group">
+                    <label for="join_email">이메일</label>
+                    <input type="text" name="user_email" id="join_email" class="form-control" placeholder="이메일을 입력해주세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="join_name">이름</label>
+                    <input type="text" name="user_name" id="join_name" class="form-control" placeholder="이름을 입력해주세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="join_pw">비밀번호</label>
+                    <input type="password" name="password" id="join_pw" class="form-control" placeholder="비밀번호를 입력해주세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="join_pw2">비밀번호 확인</label>
+                    <input type="password" name="password" id="join_pw2" class="form-control" placeholder="다시 한 번 비밀번호를 입력해주세요" required>
+                </div>
+                <div class="form-group flex-col mt-2">
+                    <button id="join_submit" class="blue-btn flex-end">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/Join.js"></script>
+
+    <div id="toast-container"></div>
+
+    <footer>
+        <div class="h-100 flex-center">
+            <span>Copyright Gondr Allright reserved. Since 2017-03-01</span>
+        </div>
+    </footer>
+</body>
+</html>
