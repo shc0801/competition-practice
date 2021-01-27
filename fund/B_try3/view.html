@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header class="container">
+        <div class="header-top d-lg-flex d-none flex-col">
+            <div class="auth mr-3 flex-end">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+        </div>
+        <div class="header-bottom flex-between">
+            <div class="logo"><img src="./images/logo.png" alt="logo" height="35"></div>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item"><a href="./index.html" class="lighter">메인페이지</a></div>
+                <div class="nav-item"><a href="./register.html" class="lighter">펀드등록</a></div>
+                <div class="nav-item"><a href="./view.html" class="lighter">펀드보기</a></div>
+                <div class="nav-item"><a href="./investor.html" class="lighter">투자자목록</a></div>
+            </nav>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="auth">
+                <a href="/login" class="header-btn">로그인</a>
+                <a href="./join.html" class="header-btn">회원가입</a>
+                <a href="/admin" class="header-btn">관리자</a>
+            </div>
+            <nav class="mt-2">
+                <div class="nav-item py-3"><a href="./index.html" class="lighter">메인페이지</a></div>
+                <div class="nav-item py-3"><a href="./register.html" class="lighter">펀드등록</a></div>
+                <div class="nav-item py-3"><a href="./view.html" class="lighter"></a>펀드보기</div>
+                <div class="nav-item py-3"><a href="./investor.html" class="lighter">투자자목록</a></div>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/sample10.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">펀드보기</div>
+                <div class="fs-1 my-2">
+                    킥스타터
+                    <i class="fa fa-angle-right mx-1"></i>
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    펀드보기
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-fund" class="py-5">
+        <div class="container">
+            <div class="header flex-col-center">
+                <i class="fa fa-bar-chart"></i>
+                <h2>best <span>Fund</span></h2>
+                <p>어떤 펀드가 가장 좋을까요?</p>
+            </div>
+            <div class="row">
+                
+            </div>
+            <div class="mt-4 flex-center">
+                <a class="py-2 px-3 blue-btn" href="#">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="py-2 px-3 btn-filled" href="#">
+                    1
+                </a>
+                <a class="py-2 px-3 blue-btn" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="investor-view-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body px-4 py-5">
+                    <div class="title">상세보기</div>
+                    <div class="mt-2">
+                        <small class="text-gray">번호</small>
+                        <p class="ml-2 mb-0"></p>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-gray">펀드명</small>
+                        <p class="ml-2 mb-0"></p>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-gray">창업자명</small>
+                        <p class="ml-2 mb-0"></p>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-gray">모집마감일</small>
+                        <p class="ml-2 mb-0"></p>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-gray">투자자 리스트</small>
+                        <div class="investor pt-1 pl-4" style="max-height: 450px; height: auto; overflow-y: scroll;">
+                            <div>
+                                <small class="text-gray">이메일</small>
+                                <p class="ml-2 mb-0"></p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자금액</small>
+                                <p class="ml-2 mb-0"></p>
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-gray">투자시간</small>
+                                <p class="ml-2 mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="invest-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body px-4 py-5">
+                    <form action="/insert/investor" method="post">
+                        <div class="title">투자하기</div>
+                        <div class="form-group">
+                            <label for="invest_num">펀드번호</label>
+                            <input type="text" name="fund_num" id="invest_num" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="invest_name">펀드이름</label>
+                            <input type="text" name="fund_name" id="invest_name" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="invest_investor">투자자명</label>
+                            <input type="text" name="user_name" id="invest_investor" class="form-control" value="홍길동" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="invest_price">투자금액</label>
+                            <input type="number" name="fund_price" id="invest_price" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label for="invest-sign">서명란</label>
+                                <select id="thick" class="form-control mb-2" aria-placeholder="두께를 선택하세요">
+                                    <option value="1">1pt</option>
+                                    <option value="2">2pt</option>
+                                    <option value="3">3pt</option>
+                                    <option value="4">4pt</option>
+                                </select>
+                            </div>
+                            <canvas width="450" height="150"></canvas>
+                            <input type="hidden" name="fund_sign" id="invest_sign">
+                        </div>
+                        <div class="form-group">
+                            <button class="blue-btn insert-btn w-100">투자</button>
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <button class="blue-btn close-btn w-100">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/View.js"></script>
+
+    <div id="toast-container">
+    </div>
+
+    <footer>
+        <div class="h-100 flex-center">
+            <span>Copyright Gondr Allright reserved. Since 2017-03-01</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -12,14 +12,15 @@ class App {
         this.data.forEach((item, i) => {
             item.idx = i;
             item.successRate = (item.current / item.total) * 100;
-            item.str_total = this.strting(item.total);
-            item.str_current = this.strting(item.current);
+            item.str_total = this.string(item.total);
+            item.str_current = this.string(item.current);
         })
         this.data.forEach(item => this.addItem(item));
         this.loading();
     }
-    strting(item) {
-        return item.toLocaleString("ko-KR")
+
+    string(item) {
+        return item.toLocaleString("ko-KR");
     }
 
     addItem(item) {
@@ -28,126 +29,93 @@ class App {
         div.classList.add("col-md-6");
         div.classList.add("my-3");
         div.classList.add("px-4");
-        div.innerHTML =`<div class="card">
-                            <div class="card-header flex-col">
-                                <div class="flex-end"><span>${item.number}</span></div>
-                            </div>
-                            <div class="card-body">
-                                <div>
-                                    <small class="text-bold">펀드이름</small>
-                                    <p class="ml-2 mb-0">${item.name}</p>
-                                    <small class="text-bold">~ ${item.endDate}</small>
+        div.innerHTML = `   <div class="card">
+                                <div class="card-header flex-col">
+                                    <span class="flex-end text-gray">${item.number}</span>
                                 </div>
-                                <div class="mt-2">
-                                    <small class="text-bold">모집금액</small>
-                                    <p class="ml-2 mb-0">${item.str_total}원</p>
-                                </div>
-                                <div class="mt-2">
-                                    <div class="progress" style="height: 15px;">
-                                        <div class="progress-bar fs-n1" style="width: 100%;" aria-valuenow="${item.successRate}">loading...</div>
+                                <div class="card-body">
+                                    <div>
+                                        <small class="text-gray">창업펀드명</small>
+                                        <p class="ml-2 mb-0">${item.name}</p>
+                                        <small>~ ${item.endDate}</small>
+                                    </div>
+                                    <div class="mt-2">
+                                        <small class="text-gray">현재금액</small>
+                                        <span class="ml-2">${item.str_current}원</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <div class="progress w-100" style="height: 15px;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated fs-n1" style="width: 100%;" aria-valuenow="${item.successRate}">loading...</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-footer flex-center">
-                                <button class="blue-btn invest-btn w-50 mx-1" data-id=${item.idx} data-toggle="modal" data-target="#invest-modal">투자하기</button>
-                                <button class="blue-btn view-btn w-50 mx-1" data-id=${item.idx} data-toggle="modal" data-target="#investor-view-modal">상세보기</button>
-                        </div>`;
-        this.fund.appendChild(div);
-        console.log(new Date(item.endDate))
-        if(new Date(item.endDate) <= new Date()) {
-            div.querySelector(".card-footer").innerHTML = `
-            <button class="blue-btn invest-btn w-50 mx-1" data-id=${item.idx} data-toggle="modal" data-target="#invest-modal">투자하기</button>
-            <button class="blue-btn view-btn w-50 mx-1" data-id=${item.idx} data-toggle="modal" data-target="#investor-view-modal">상세보기</button>`;
-        } else {
-            div.querySelector(".card-footer").innerHTML = `
-            <button class="blue-btn invest-btn w-50 mx-1" >모집완료</button>
-            <button class="blue-btn view-btn w-50 mx-1" data-id=${item.idx} data-toggle="modal" data-target="#investor-view-modal">상세보기</button>`;
-        }
-        div.querySelector(".view-btn").addEventListener("click", e => { this.viewModal(e) });
-        div.querySelector(".invest-btn").addEventListener("click", e => { this.investModal(e) });
-    }
-
-    viewModal(e) {
-        let id = e.target.dataset.id;
-        let modal = document.querySelector("#investor-view-modal .modal-body");
-
-        modal.innerHTML =  `<div class="title">상세보기</div>
-                            <div class="mt-2">
-                                <small class="text-gray">번호</small>
-                                <p class="ml-2 mb-0">${this.data[id].number}</p>
-                            </div>
-                            <div class="mt-2">
-                                <small class="text-gray">펀드명</small>
-                                <p class="ml-2 mb-0">${this.data[id].name}</p>
-                            </div>
-                            <div class="mt-2">
-                                <small class="text-gray">창업자명</small>
-                                <p class="ml-2 mb-0">${this.data[id].owner}</p>
-                            </div>
-                            <div class="mt-2">
-                                <small class="text-gray">모집마감일</small>
-                                <p class="ml-2 mb-0">${this.data[id].endDate}</p>
-                            </div>
-                            <div class="mt-2">
-                                <small class="text-gray">투자자 리스트</small>
-                                <div class="investor pt-1 pl-4" style="max-height: 450px; height: auto; overflow-y: scroll;">
+                                <div class="card-footer">
                                     
                                 </div>
                             </div>`;
-        this.data[id].investorList.forEach(list => {
-            let div = document.createElement("div");
-            div.classList.add("mt-2");
-            div.classList.add("pr-2");
-            div.classList.add("pb-2");
-            div.classList.add("border-bottom");
-            div.innerHTML =    `<div>
-                                    <small class="text-gray">이메일</small>
-                                    <span class="ml-2">${list.email}</span>
-                                </div>
-                                <div class="mt-2">
-                                    <small class="text-gray">투자금액</small>
-                                    <span class="ml-2">${list.pay}</span>
-                                </div>
-                                <div class="mt-2">
-                                    <small class="text-gray">투자시간</small>
-                                    <span class="ml-2">${list.datetime}</span>
-                                </div>`;
-            modal.querySelector(".investor").appendChild(div);
-        })
+        if(new Date(item.endDate) < new Date()) {
+            div.querySelector(".card-footer").innerHTML = `<button class="blue-btn w-100" data-toggle="modal" data-target="#invest-modal" data-id=${item.idx} value="<?=$fund->$fund_num?>">투자하기</button>`
+        }
+
+        this.fund.appendChild(div)
+        
+        div.querySelector("button").addEventListener("click", (e) => this.modal(e));
     }
 
-    investModal(e) {
+    modal(e) {
         let id = e.target.dataset.id;
+        
+        let num = document.querySelector('#invest_num');
+        let name = document.querySelector('#invest_name');
+        let price = document.querySelector('#invest_price');
+        
+        num.value = this.data[id].number;
+        name.value = this.data[id].name;
 
-        let num = document.querySelector("#invest_num");
-        let name = document.querySelector("#invest_name");
-        let price = document.querySelector("#invest_price");
-
-        num.value = this.data[id].number
-        name.value = this.data[id].name
-
-        price.addEventListener("input", e => {
-            if(price.value < 0) {
-                price.setCustomValidity("자연수만 입력할 수 있습니다.");
-                price.reportValidity();
+        document.querySelector("#invest_price").addEventListener("input", e => {
+            if(e.target.value < 0) {
+                e.target.setCustomValidity("자연수만 입력할 수 있습니다");
+                e.target.reportValidity();
+                e.target.value = 0;
             } else {
-                price.setCustomValidity("");
-                price.reportValidity();
+                e.target.setCustomValidity("");
+                e.target.reportValidity();
             }
-        })
+        });
 
-        document.querySelector(".close-btn").addEventListener("click", () => {
-            $("#invest-modal").modal("hide");
-        })
+        let closeBtn = document.querySelector("#invest-modal button");
+        closeBtn.addEventListener("click", () => { $("#invest-modal").modal("hide") });
 
-        document.querySelector(".insert-btn").addEventListener("click", () => {
-            if(price.value == "" || !price.checkValidity()) {
+        document.querySelector("#invest_submit").addEventListener("click", () => {
+            if(price.value == "") 
                 this.showToast();
-            }
         })
 
         this.signature();
     }
+
+    showToast() {
+        let id = new Date().getTime();
+        let toast = `<div class="toast"id=${id}>
+                        <div class="toast-header flex-between">
+                            <strong>form 오류</strong>
+                            <button type="button" class="close">x</button>
+                        </div>
+                        <div class="toast-body">
+                            입력하신 정보가 양식과 일치하지 않습니다.
+                        </div>
+                    </div>`;
+        $("#toast-container").append(toast);
+        $(`#${id}`).toast({
+            autohide: true,
+            delay: 3000
+        });
+        $(`#${id} button`).on('click', function () {
+            $(`#${id}`).remove();
+        });
+        $(`#${id}`).toast('show');
+    }
+
 
     signature() {
         this.canvas = $("canvas");
@@ -159,7 +127,7 @@ class App {
             this.thick = document.querySelector("#thick").value;
             this.ctx.lineWidth = this.thick;
 
-            const {x, y} = this.getXY(e);
+            const { x, y } = this.getXY(e);
             this.ctx.beginPath();
             this.ctx.moveTo(x, y);
             this.flag = true;
@@ -167,7 +135,7 @@ class App {
         
         this.canvas[0].addEventListener("mousemove", e => {
             if(this.flag) {
-                const {x, y} = this.getXY(e);
+                const { x, y } = this.getXY(e);
                 this.ctx.lineTo(x, y);
                 this.ctx.stroke();
             }
@@ -175,7 +143,7 @@ class App {
         
         this.canvas[0].addEventListener("mouseup", e => {
             if(this.flag) {
-                const {x, y} = this.getXY(e);
+                const { x, y } = this.getXY(e);
                 this.ctx.lineTo(x, y);
                 this.ctx.stroke();
                 this.flag = false;
@@ -200,7 +168,6 @@ class App {
         setTimeout(() => {
             let progress = document.querySelectorAll(".progress-bar");
             progress.forEach((bar, i) => {
-                console.log(i, this.data)
                 bar.classList.remove("progress-bar-striped");
                 bar.classList.remove("progress-bar-animated");
                 bar.style.transition = `${this.data[i].successRate / 50}s`;
@@ -209,30 +176,8 @@ class App {
             })
         }, 3000);
     }
-
-    showToast() {
-        let id = new Date().getTime();
-        let toast = `<div class="toast" id=${id}>
-                        <div class="toast-header flex-between">
-                            <strong>form 오류</strong>
-                            <button class="close">x</button>
-                        </div>
-                        <div class="toast-body">
-                            입력하신 정보가 양식과 일치하지 않습니다.
-                        </div>
-                    </div>`;
-        $("#toast-container").append(toast);
-        $(`#${id}`).toast({
-            autohide: true,
-            delay: 3000
-        });
-        $(`#${id} button`).on("click", function() {
-            $(`#${id}`).remove();
-        });
-        $(`#${id}`).toast("show");
-    }
 }
 
-window.addEventListener("load", () =>{
-    let app = new App;
-})
+window.onload = function() {
+    let app = new App();
+}
