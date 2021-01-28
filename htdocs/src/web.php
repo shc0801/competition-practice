@@ -14,4 +14,9 @@ Router::get("/logout", "UserController@logout");
 Router::get("/register", "MainController@registerPage");
 Router::post("/insert/fund", "MainController@insertFund");
 
+Router::get("/view", "MainController@viewPage");
+Router::get("/view/{id}", "MainController@viewPage");
+
+Router::get("/investor", "MainController@investorPage");
+
 Router::start();

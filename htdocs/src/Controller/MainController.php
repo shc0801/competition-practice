@@ -30,7 +30,17 @@ class MainController {
         go("/", "펀드가 등록되었습니다.");
     }
 
+    function investorPage() {
+        view("investor");
+    }
+
     function detailPage() {
-        view("detail");
+        extract($_POST);
+        var_dump($_POST);
+
+        $fund = DB::fetch("SELECT * FROM funds WHERE fund_num = ?", [$fund_num]);
+        // $fund = DB::fetchAll("SELECT * FROM investors WHERE ")
+
+        view("detail", compact("fund", "investors"));
     }
 }

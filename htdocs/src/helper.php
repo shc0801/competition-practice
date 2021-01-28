@@ -36,13 +36,12 @@ function pagenation($data) {
     define("LIST_LENGTH", 10);
     define("BLOCK_LENGTH", 5);
     define("SPACING", 4);
+    
+    $page = isset($_GET["page"]) && is_numeric($_GET["page"]) && $_GET["page"] >= 1 ? $_GET["page"] : 1;
 
-    $page = isset($_GET["page"]) && is_numeric($_GET["page"]) && $_GET["page"] >= 1 ? 1 :$_GET["page"];
-
-    $totalPage = ceil(count($page) / LIST_LENGTH);
-
-    $startPage = floor($page / BLOCK_LENGTH) * LIST_LENGTH + 1;
-
+    $totalPage = ceil(count($data) / LIST_LENGTH);
+    
+    $startPage = floor($page / BLOCK_LENGTH) * BLOCK_LENGTH + 1;
     $endPage = $startPage + SPACING > $totalPage ? $totalPage : $startPage + SPACING;
 
     $next = true;
