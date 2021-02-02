@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" name="open-aside" id="open-aside" hidden>
+    <header>
+        <div class="wrap flex-between h-100">
+            <a href="#" class="logo background" height="50">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">메인페이지</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">전북대표축제</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">개요 / 연혁</a>
+                        <a class="px-2" href="#">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">독자와의 만남</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">예약하기</a>
+                        <a class="px-2" href="#">예약확인</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">종합지원센터</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">공지사항</a>
+                        <a class="px-2" href="#">센터 소개</a>
+                        <a class="px-2" href="#">관광정보</a>
+                        <a class="px-2" href="#">데이터 공개</a>
+                        <a class="px-2" href="#">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="auth d-lg-flex d-none">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content">
+
+        </div>
+    </aside>
+
+    <div id="visual" class="wrap">
+        <div class="visual-image d-flex h-100">
+            <img class="background-image" src="./images/visual/1.jpg" alt="visual">
+        </div>
+        <div class="visual-text pos-center text-center">
+            <div class="pos-center">
+                <h1>전북축제에 오신것을 환영합니다</h2>
+                <p class="pt-2 lighter">전통ㆍ문화ㆍ축제가 살아 숨쉬는 전북축제는 모두가 하나되어 <br>다양한 경험을 만들어 나아갑니다</p>
+                <button class="visual-btn mt-2">전북축제 ON! 소개</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="init-book" class="py-5">
+        <div class="container">
+            <div class="header flex-col-center">
+                <i class="fa fa-book"></i>
+                <h2 class="fs-4 text-gray">Introduct <strong>area</strong></h2>
+                <p>독서대전 소개</p>
+            </div>
+            <div class="header flex-col-center">
+                <i class="fa fa-book"></i>
+                <h2 class="fs-4 bold text-gray">Introduct <span>area</span></h2>
+                <p>독서대전 소개</p>
+            </div>
+            <div class="head">
+                <span>독서대전 소개</span>
+                <div class="fs-9"><span class="text-cream">I</span>ntroduct</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 my-4 px-4 border">
+                    <div class="card">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

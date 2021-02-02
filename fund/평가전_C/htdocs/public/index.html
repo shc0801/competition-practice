@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/syle.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+        <header class="container">
+            <div class="header-top d-lg-flex d-none flex-col">
+                <div class="auth mr-3 flex-end">
+                    <a class="header-btn" href="/login">로그인</a>
+                    <a class="header-btn" href="./join.html">회원가입</a>
+                    <a class="header-btn" href="/admin">관리자</a>
+                </div>
+            </div>
+            <div class="header-bottom flex-between">
+                <div class="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo" height="35"></a></div>
+                <nav class="d-lg-flex d-none">
+                    <div class="nav-item">
+                        <a href="./index.html" class="lighter">메인페이지</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./register.html" class="lighter">펀드등록</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./view.html" class="lighter">펀드보기</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./investor.html" class="lighter">투자자목록</a>
+                    </div>
+                </nav>
+                <label for="open-aside" class="icon-bar d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </label>
+            </div>
+        </header>
+        <aside>
+            <label for="open-aside" class="aside-background"></label>
+            <div class="aside-content px-4">
+                <div class="auth">
+                    <a class="header-btn" href="/login">로그인</a>
+                    <a class="header-btn" href="./join.html">회원가입</a>
+                    <a class="header-btn" href="/admin">관리자</a>
+                </div>
+                <nav class="mt-2">
+                    <div class="nav-item py-2">
+                        <a href="./index.html" class="lighter">메인페이지</a>
+                    </div>
+                    <div class="nav-item py-2">
+                        <a href="./register.html" class="lighter">펀드등록</a>
+                    </div>
+                    <div class="nav-item py-2">
+                        <a href="./view.html" class="lighter">펀드보기</a>
+                    </div>
+                    <div class="nav-item py-2">
+                        <a href="./investor.html" class="lighter">투자자목록</a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <div id="visual" class="background">
+            <div class="visual-text">
+                <h3>킥스타터 펀드</h3>
+                <p>내 자산을 불리기 쉬운 가장 편한 재테크, 자본이 부족하다면<br>
+                      킥스타터 펀드에서 미래를 위한 발판을 마련해보세요</p>
+                <button class="blue-btn">시작하기</button>
+            </div>
+        </div>
+        
+        <div id="best-fund" class="py-5">
+            <div class="container">
+                <div class="header flex-col-center">
+                    <i class="fa fa-bar-chart"></i>
+                    <h2>view <span>Fund</span></h2>
+                    <p>어떤 펀드가 가장 좋을까요?</p>
+                </div>
+                <div class="row py-3">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="investor-view-modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body px-4 py-5">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/App.js"></script>
+
+        <footer>
+            <div class="container h-100 flex-center">
+                <span>Copyright Gondr Allright reserved. Since 2017-03-01</span>
+            </div>
+        </footer>
+</body>
+</html>
