@@ -1,0 +1,22 @@
+/* overview */
+
+#overview .content-left img { width: 400px; height: 500px; object-fit: cover; }
+#overview .content-right > span { font-size: 1.5em; }
+#overview .content-right p { line-height: 2em; margin-bottom: -1.3em !important; }
+#overview .content-right p > * { display: table-cell; }
+#overview strong { width: 150px; }
+
+@media (max-width: 997px) { 
+    #overview .content-right > span { font-size: 1.2em; }
+    
+    .sub-text { width: 450px; }
+}
+
+/* history */
+
+#history { background-color: #f7f7f7; }
+#history .content p { line-height: 50px; }
+
+/* visit */
+
+#visit .header i { transform: translateY(5px) }
