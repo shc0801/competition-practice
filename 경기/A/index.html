@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/fontawesome-free-5.13.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
 </head>
 <body>
     <input type="checkbox" hidden>
@@ -40,8 +40,139 @@
         </div>
     </header>
     <div id="visual" class="wrap">
-        <div class="visual-images w-100 h-100">
+        <div class="visual-images d-flex w-100 h-100">
             <img class="background-image" src="./images/common 4.jpg" alt="">
+            <img class="background-image" src="./images/common 4.jpg" alt="">
+            <img class="background-image" src="./images/common 4.jpg" alt="">
+        </div>
+        <div class="visual-text pos-center text-center text-white">
+            <div class="pos-center">
+                <h1>한번의 비교, 최선의 선택</h1>
+                <p>숙박사업의 모든 고민 <br>딱 맞는 솔루션으로 해결해드립니다.</p>
+                <button class="visual-btn px-5">시작하기</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popularity" class="py-5">
+        <div class="container pt-4">
+            <div class="header between-end pt-5 mb-1">
+                <div class="flex-col">
+                    <h3 class="bold text-ddgray">인기 축제</h3>
+                    <h4 class="text-gray bold">가장 인기많은 숙박업소를 한눈에</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/popularity_accommodation/accommodation_1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">라마다 전주</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전라북도 전주시 완산구</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.6점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">20건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">바로가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/popularity_accommodation/accommodation_2.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">리안호텔 전주</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주한옥마을 도보 3분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.7점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">7건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">바로가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/popularity_accommodation/accommodation_3.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 키마호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주버스터미널 차량7분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">3.9점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">62건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">바로가기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="calendar" class="py-5">
+        <div class="container">
+            <div class="header flex-col-center">
+                <h3 class="bold">축제 일정</h3>
+                <h4 class="text-gray bold">전주에서 진행중인 축제를 소개합니다.</h4>
+            </div>
+            <div class="w-100 calendar-header flex-col pt-4">
+                <input type="month" name="" id="" class="form-control flex-end">
+            </div>
+            <div class="row pt-4 flex-center">
+                <div class="col-lg-3 col-sm-10">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-10">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
