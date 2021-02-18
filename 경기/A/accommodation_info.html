@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header>
+        <div class="h-100 wrap flex-between">
+            <a href="#" class="logo background">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">전주시 축제 숙박관리시스템</a>
+                </div>
+                <div class="nav-item drop this-drop">
+                    <a href="#">숙박업소운영</a>
+                    <div class="drop-menu text-center">
+                        <a href="#" class="px-2">숙박업소 예약</a>
+                        <a href="#" class="px-2">숙박업소 문의</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">숙박업소관리</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">관리자</a>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="auth d-lg-flex d-none">
+                <a href="#" class="px-2">로그인</a>
+                <a href="#" class="px-2">회원가입</a>
+            </div>
+            <label class="icon-bar d-lg-none" for="open-aside">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="nav--item py-2">
+                <a href="#">전주시 축제 숙박관리시스템</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소운영</a>
+                <div class="nav--item flex-col pl-3 fs-n1">
+                    <a href="#" class="py-1">숙박업소 예약</a>
+                    <a href="#" class="py-1">숙박업소 문의</a>
+                </div>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소관리</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">관리자</a>
+            </div>
+        </div>
+    </aside>
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/common 40.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">숙박업소 상세보기</div>
+                <div class="fs-1 my-2">
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    숙박업소 상세보기
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info" class="py-5">
+        <div class="container">
+            
+            <div class="row py-3">
+                <div class="col-lg-5 col-md-6">
+                    <img class="image" src="./images/accommodation_list/accommodation1.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-md-6 px-5 py-4">
+                    <div class="flex-between">
+                        <div>
+                            <span class="fs-2 lighter">2020 숙박업소</span><br>
+                            <strong class="fs-5">라마다 전주</strong>
+                        </div>
+                        <button class="gray-btn py-3">운영중</button>
+                    </div>
+                    <div class="border mt-3 p-4">
+                        <div>
+                            <small class="bold">숙박위치</small>
+                            <span class="ml-2">전주시</span>
+                        </div>
+                        <div class="mt-2">
+                            <small class="bold">별점</small>
+                            <span class="ml-2">4.6</span>
+                        </div>
+                        <div class="mt-2">
+                            <small class="bold">사장님 한마디</small>
+                            <span class="ml-2">짱맛꿀맛! 배부른 실속혜택~</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header between-end pt-5 mb-1">
+                <div class="flex-col">
+                    <h3 class="bold text-ddgray">추천 숙소</h3>
+                    <h4 class="text-gray bold">근처에 존재하는 숙박업소를 한눈에</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_1.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">슈페리어 더블</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">111,600원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">8개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_2.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">슈페리어 트윈</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">111,600원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">9개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_3.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">슈페리어 패밀리 트윈</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">125,000원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">3개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_4.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">이그제큐티브 더블</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">161,364원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">6개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_5.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">이그제큐티브 트윈</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">161,364원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">7개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/room_list/room_6.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">이그제큐티브 패밀리 트윈</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">객실가격</small>
+                                    <span class="ml-2 mb-0">173,864원</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">남은 객실 갯수</small>
+                                    <span class="ml-2 mb-0">1개</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <button class="gray-btn w-100">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header between-end pt-5 mb-1">
+                <div class="flex-col">
+                    <h3 class="bold text-ddgray">숙소 리뷰</h3>
+                    <h4 class="text-gray bold">고객들의 숙소 리뷰들을 한눈에</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card">
+                    <div class="card-header p-0">
+                        <img class="image" src="./images/user_list/sample_user_1.png" alt="">
+                    </div>
+                    <div class="card-body pb-2">
+                        <div class="px-3">
+                            <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                            <div>
+                                <span class="text-ddgray bold fs-2">이그제큐티브 패밀리 트윈</span>
+                            </div>
+                            <div>
+                                <small class="text-bold">객실가격</small>
+                                <span class="ml-2 mb-0">173,864원</span>
+                            </div>
+                            <div>
+                                <small class="text-bold">남은 객실 갯수</small>
+                                <span class="ml-2 mb-0">1개</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer px-0">
+                        <button class="gray-btn w-100">상세보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="h-100 container flex-center">
+            <span>인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원
+                COPYRIGHTⓒ 2016 HRDKOREA</span>
+        </div>
+    </footer>
+</body>
+</html>
