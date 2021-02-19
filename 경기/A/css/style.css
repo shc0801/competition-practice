@@ -66,6 +66,7 @@ p { margin-bottom: 0; line-height: 2em; }
 .background { background-position: 65%; background-repeat: no-repeat; background-size: cover; }
 .image { width: 100%; height: 100%; object-fit: cover; }
 .background-image { width: 100%; height: 100%; position: absolute; left: 0; top: 0; object-fit: cover; filter: brightness(50%); }
+.progress-bar { background-color: #fff !important; }
 
 .gray-btn {
     background-color: #333030;
@@ -225,7 +226,9 @@ aside {
 #open-aside:checked ~ aside { opacity: 1; visibility: visible; }
 #open-aside:checked ~ aside > .aside-content { left: 20%; }
 
-#visual { height: 700px; position: relative; }
+#visual { height: 750px; position: relative; overflow: hidden; }
+.visual-images { width: 300%; position: absolute; left: 0; top: 0; }
+.visual-images > img { width: calc(100% / 3); object-fit: cover; filter: brightness(50%); }
 .visual-text > div { width: 100vw; }
 .visual-text p { line-height: 25px; }
 .visual-btn {
@@ -237,6 +240,20 @@ aside {
     border-radius: 30px;
 }
 .visual-btn:hover { background-color: #fff; color: #333333; }
+
+.slide-btn {  
+    width: 320px;
+    position: absolute;
+    left: 50%; bottom: 10%;
+    transform: translateX(-50%);
+}
+.slide-btn > div { 
+    width: 100px;
+    height: 2px;
+    background: #494949;
+
+    outline: none;
+}
 
 #sub-visual { height: 350px; position: relative; }
 
