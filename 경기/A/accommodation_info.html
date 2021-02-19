@@ -13,7 +13,7 @@
     <input type="checkbox" id="open-aside" hidden>
     <header>
         <div class="h-100 wrap flex-between">
-            <a href="#" class="logo background">
+            <a href="./index.html" class="logo background">
             </a>
             <nav class="d-lg-flex d-none">
                 <div class="nav-item drop">
@@ -23,7 +23,7 @@
                     <a href="#">숙박업소운영</a>
                     <div class="drop-menu text-center">
                         <a href="#" class="px-2">숙박업소 예약</a>
-                        <a href="#" class="px-2">숙박업소 문의</a>
+                        <a href="./accommodation_inquiry.html" class="px-2">숙박업소 문의</a>
                     </div>
                 </div>
                 <div class="nav-item drop">
@@ -79,9 +79,12 @@
             </div>
         </div>
     </div>
-    <div id="info" class="py-5">
+    
+    <input type="checkbox" id="view-room" hidden>
+    <input type="checkbox" id="view-review" hidden>
+
+    <div id="info" class="pt-5">
         <div class="container">
-            
             <div class="row py-3">
                 <div class="col-lg-5 col-md-6">
                     <img class="image" src="./images/accommodation_list/accommodation1.jpg" alt="">
@@ -107,10 +110,18 @@
                             <small class="bold">사장님 한마디</small>
                             <span class="ml-2">짱맛꿀맛! 배부른 실속혜택~</span>
                         </div>
+                        <div class="mt-1">
+                            <label class="mt-3" for=""><a class="gray-btn py-2">리뷰작성</a></label>
+                            <label class="mt-3" for="view-room"><a class="gray-btn py-2">객실 안내/예약</a></label>
+                            <label class="mt-3" for="view-review"><a class="gray-btn py-2">리뷰</a></label>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </div>
+    <div id="room" class="pt-2">
+        <div class="container">
             <div class="header between-end pt-5 mb-1">
                 <div class="flex-col">
                     <h3 class="bold text-ddgray">추천 숙소</h3>
@@ -140,7 +151,7 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
@@ -166,7 +177,7 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
@@ -192,7 +203,7 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +229,7 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
@@ -244,7 +255,7 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
@@ -270,11 +281,15 @@
                             </div>
                         </div>
                         <div class="card-footer px-0">
-                            <button class="gray-btn w-100">상세보기</button>
+                            <button class="gray-btn w-100">예약하기</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="review" class="py-4">
+        <div class="container">
             <div class="header between-end pt-5 mb-1">
                 <div class="flex-col">
                     <h3 class="bold text-ddgray">숙소 리뷰</h3>
@@ -303,7 +318,7 @@
                         </div>
                     </div>
                     <div class="card-footer px-0">
-                        <button class="gray-btn w-100">상세보기</button>
+                        <button class="gray-btn w-100">예약하기</button>
                     </div>
                 </div>
             </div>

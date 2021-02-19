@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@ p { margin-bottom: 0; line-height: 2em; }
 .title { font-size: 1.4em; font-weight: bold; text-align: center; color: #333030; }
 .text-ddgray { color: #333333; }
 .text-dgray { color: #333030; }
-.text-gray { color: #8b8687; }
+.text-gray { color: #9c836a; }
 .text-blue { color: #32435F; }
 
 .t-head { border-bottom: 3px solid #52616a; }
@@ -78,6 +77,7 @@ p { margin-bottom: 0; line-height: 2em; }
 
     padding: .4em 1.5em;
     border: none;
+    cursor: pointer;
 }
 .gray-btn:hover { background: none; color: #333030; font-weight: bold; }
 .gray-btn::before, .gray-btn::after { 
@@ -106,7 +106,7 @@ p { margin-bottom: 0; line-height: 2em; }
     font-size: 2em;
     font-weight: 700;
     line-height: 15px;
-    color: #8b8687;
+    color: #9c836a;
 
     display: inline-block;
 
@@ -247,15 +247,21 @@ aside {
 }
 
 #calendar { background-color: #f7f7f7; }
-#calendar .content-header { background-color: #8b8687; }
+#calendar .content-header { background-color: #9c836a; }
 #calendar .content-header i { font-size: 1.5em; }
 #calendar button { border: 1px solid #000; padding: 0.4em; }
-#calendar button:hover { color: #8b8687; border: 1px solid #8b8687; }
+#calendar button:hover { color: #9c836a; border: 1px solid #9c836a; }
 #calendar .content-footer { border-top: 1px solid #ddd; }
 #calendar .content-footer i { font-size: 2em; }
-#calendar .content-footer a { font-size: 1.28em; color: #8b8687; padding: 0 .25em; }
+#calendar .content-footer a { font-size: 1.28em; color: #9c836a; padding: 0 .25em; }
 #calendar .content-footer a.active { color: #333030; font-weight: bold; }
 
 #info .row:nth-child(1) { border-top: 1px solid #000; border-bottom: 1px solid #ddd; }
+
+#room, #review { overflow: hidden; }
+#room, #review { height: 0; visibility: hidden; transform: translateY(-30px); transition: 1s; }
+
+#view-room:checked ~ #room { height: auto; visibility: visible; transform: translateY(0px); }
+#view-review:checked ~ #review { height: auto; visibility: visible; transform: translateY(0px); }
 
 footer { height: 60px; background-color: rgb(29, 29, 29); color: #fff; }
