@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header>
+        <div class="h-100 wrap flex-between">
+            <a href="./index.html" class="logo background">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">전주시 축제 숙박관리시스템</a>
+                </div>
+                <div class="nav-item drop this-drop">
+                    <a href="#">숙박업소운영</a>
+                    <div class="drop-menu text-center">
+                        <a href="./accommodation_reserve.html" class="px-2">숙박업소 예약</a>
+                        <a href="./accommodation_inquiry.html" class="px-2">숙박업소 문의</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">숙박업소관리</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">관리자</a>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="auth d-lg-flex d-none">
+                <a href="#" class="px-2">로그인</a>
+                <a href="#" class="px-2">회원가입</a>
+            </div>
+            <label class="icon-bar d-lg-none" for="open-aside">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="nav--item py-2">
+                <a href="#">전주시 축제 숙박관리시스템</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소운영</a>
+                <div class="nav--item flex-col pl-3 fs-n1">
+                    <a href="#" class="py-1">숙박업소 예약</a>
+                    <a href="#" class="py-1">숙박업소 문의</a>
+                </div>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소관리</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">관리자</a>
+            </div>
+        </div>
+    </aside>
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/common 40.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">축제 상세보기</div>
+                <div class="fs-1 my-2">
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    축제 상세보기
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info" class="py-5">
+        <div class="container">
+            
+            <div class="row py-3">
+                <div class="col-lg-5 col-md-6">
+                    <img class="image" src="./images/festivals/festival_2.png" alt="">
+                </div>
+                <div class="col-lg-7 col-md-6 px-5 py-4">
+                    <div class="flex-between">
+                        <div>
+                            <span class="fs-2 lighter">2020 전북축제</span><br>
+                            <strong class="fs-5">전주 비빔밥 축제</strong>
+                        </div>
+                        <button class="gray-btn py-3">축제중</button>
+                    </div>
+                    <div class="border mt-3 p-4">
+                        <div>
+                            <small class="bold">축제기간</small>
+                            <span class="ml-2">2020-07-09 ~ 2020-07-21</span>
+                        </div>
+                        <div class="mt-2">
+                            <small class="bold">행사장소</small>
+                            <span class="ml-2">전주한옥마을 향교일대</span>
+                        </div>
+                        <div class="mt-2">
+                            <small class="bold">행사내용</small>
+                            <span class="ml-2">지난 몇 년간 전주국제영화제의 슬로건은 '영화 표현의 해방구'였다. 외적 환경에 맞서 영화제 본연의 정신인 표현의 자유가 지탱될 수 있도록 하기 위함이었다. 올해 새롭게 변모된 슬로건에는 '영화'와 '표현' 사이에 쉼표(,)가 추가되었다. TASTE! FEEL! ENJOY! 다양한 비빔밥과 특별한 음식을 맛보고, 느끼고, 즐길 수 있는 한바탕 비빔축제가 펼쳐집니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header between-end pt-5 mb-1">
+                <div class="flex-col">
+                    <h3 class="bold text-ddgray">추천 숙소</h3>
+                    <h4 class="text-gray lighter">근처에 존재하는 숙박업소를 한눈에</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation1.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">라마다 전주</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전라북도 전주시 완산구</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.6점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">20건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation2.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">리안호텔 전주</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주한옥마을 도보 3분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.7점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">7건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation3.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 키마호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주버스터미널 차량7분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">3.9점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">62건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation4.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 더씨티 호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주역 차량 14분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.4점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">348건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation5.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 비지트호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주역 차량 5분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.2점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">101건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation6.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 이화호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주한옥마을 앞</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.7점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">40건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation7.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">호텔 다빈</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주 한옥마을 도보 1분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.6점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">208건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation8.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 황실관광호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주 한옥마을 내 위치</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.3점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">71건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation9.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">전주 그랜드힐스턴 호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 전주역 차량 18분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.6점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">44건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/accommodation_list/accommodation10.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-3">
+                                <strong class="text-gray fs-n2">BEST HOTEL</strong>
+                                <div>
+                                    <span class="text-ddgray bold fs-2">엔브릿지 호텔</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-bold">위치</small>
+                                    <span class="ml-2 mb-0">전주시 한옥마을 도보 1분</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">별점</small>
+                                    <span class="ml-2 mb-0">4.6점</span>
+                                </div>
+                                <div>
+                                    <small class="text-bold">이용 후기 건수</small>
+                                    <span class="ml-2 mb-0">62건</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                            <a href="./accommodation_info.html"><button class="gray-btn w-100">상세보기</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="h-100 container flex-center">
+            <span>인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원
+                COPYRIGHTⓒ 2016 HRDKOREA</span>
+        </div>
+    </footer>
+</body>
+</html>

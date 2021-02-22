@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header>
+        <div class="h-100 wrap flex-between">
+            <a href="./index.html" class="logo background">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">전주시 축제 숙박관리시스템</a>
+                </div>
+                <div class="nav-item drop this-drop">
+                    <a href="#">숙박업소운영</a>
+                    <div class="drop-menu text-center">
+                        <a href="./accommodation_reserve.html" class="px-2">숙박업소 예약</a>
+                        <a href="./accommodation_inquiry.html" class="px-2">숙박업소 문의</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">숙박업소관리</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">관리자</a>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="auth d-lg-flex d-none">
+                <a href="#" class="px-2">로그인</a>
+                <a href="#" class="px-2">회원가입</a>
+            </div>
+            <label class="icon-bar d-lg-none" for="open-aside">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="nav--item py-2">
+                <a href="#">전주시 축제 숙박관리시스템</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소운영</a>
+                <div class="nav--item flex-col pl-3 fs-n1">
+                    <a href="#" class="py-1">숙박업소 예약</a>
+                    <a href="#" class="py-1">숙박업소 문의</a>
+                </div>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소관리</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">관리자</a>
+            </div>
+        </div>
+    </aside>
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/common 40.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">에약페이지</div>
+                <div class="fs-1 my-2">
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    에약페이지
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="map" class="pt-5 flex-center"> 
+        <div class="map-box">
+            <canvas  class="border"></canvas>
+        </div>
+    </div>
+    
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/Accommodation.js"></script>
+</body>
+</html>

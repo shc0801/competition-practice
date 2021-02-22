@@ -1,0 +1,4 @@
+파일이미지
+$image = $_FILES["image"];
+$filename = $image['name'];
+move_uploaded_file($image['tmp_name'], UPLOAD."/$filename");

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header>
+        <div class="h-100 wrap flex-between">
+            <a href="./index.html" class="logo background">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">전주시 축제 숙박관리시스템</a>
+                </div>
+                <div class="nav-item drop this-drop">
+                    <a href="#">숙박업소운영</a>
+                    <div class="drop-menu text-center">
+                        <a href="./accommodation_reserve.html" class="px-2">숙박업소 예약</a>
+                        <a href="./accommodation_inquiry.html" class="px-2">숙박업소 문의</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">숙박업소관리</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">관리자</a>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="auth d-lg-flex d-none">
+                <a href="#" class="px-2">로그인</a>
+                <a href="#" class="px-2">회원가입</a>
+            </div>
+            <label class="icon-bar d-lg-none" for="open-aside">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <div class="nav--item py-2">
+                <a href="#">전주시 축제 숙박관리시스템</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소운영</a>
+                <div class="nav--item flex-col pl-3 fs-n1">
+                    <a href="#" class="py-1">숙박업소 예약</a>
+                    <a href="#" class="py-1">숙박업소 문의</a>
+                </div>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">숙박업소관리</a>
+            </div>
+            <div class="nav--item py-2">
+                <a href="#">관리자</a>
+            </div>
+        </div>
+    </aside>
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/common 40.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">문의페이지</div>
+                <div class="fs-1 my-2">
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    문의페이지
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="query" class="pt-5">
+        <div class="container">
+            <div class="header flex-col-center">
+                <h3 class="bold text-ddgray">1:1문의</h3>
+                <h4 class="text-gray bold">궁금한 점이 있다면 질문해주세요!</h4>
+            </div>
+            <form action="/query" class="px-5 py-4">
+                <div class="form-group">
+                    <label for="accommodation">숙박업소</label>
+                    <select id="accommodation" name="" class="form-control">
+                        <option value="라마다 호텔">라마다 호텔</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="accommodation">문의유형</label>
+                    <select id="accommodation" name="" class="form-control">
+                        <option value="문의유형">문의유형</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">휴대폰번호</label>
+                    <input id="phone" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                </div>
+                <div class="form-group">
+                    <label for="content">문의내용</label>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="문의내용을 입력하세요" class="form-control"></textarea>
+                </div>
+                <div class="flex-col">
+                    <button class="flex-end gray-btn">문의하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="h-100 container flex-center">
+            <span>인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원
+                COPYRIGHTⓒ 2016 HRDKOREA</span>
+        </div>
+    </footer>
+</body>
+</html>
