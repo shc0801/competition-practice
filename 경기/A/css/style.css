@@ -226,7 +226,7 @@ aside {
 #open-aside:checked ~ aside { opacity: 1; visibility: visible; }
 #open-aside:checked ~ aside > .aside-content { left: 20%; }
 
-#visual { height: 750px; position: relative; overflow: hidden; }
+#visual { height: 750px; position: relative; overflow: hidden;}
 .visual-images { width: 300%; position: absolute; left: 0; top: 0; }
 .visual-images > img { width: calc(100% / 3); object-fit: cover; filter: brightness(50%); }
 .visual-text > div { width: 100vw; }

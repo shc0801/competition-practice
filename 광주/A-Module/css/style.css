@@ -151,6 +151,7 @@ p { margin-bottom: 0; line-height: 2em; }
 .black-btn:after{ right:inherit; top:inherit; left:0; bottom:0; }
 .black-btn:hover:before, .black-btn:hover:after{ width:100%; transition: 1s; }
 
+#visual {  border-radius: 0 50px !important;  }
 .visual-btn {
     background: none;
     color: #fff;

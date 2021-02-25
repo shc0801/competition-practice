@@ -117,7 +117,7 @@ p { margin-bottom: 0 !important; line-height: 2em; }
 
 header { height: 80px; background-color: #fff; position: relative; transition: .5s; z-index: 1000; }
 .logo { width: 163px; height: 50px; background-image: url(../images/logo.png); }
-.nav-background { width: 100vw; height: 50px; background-color: #242424; border-top: 1px solid rgba(255, 255, 255, 0.4); position: fixed; left: 50%; top: 80px; transition: .5s; transform: translate(-50%, -2px); visibility: hidden; opacity: 0; }
+.nav-background { width: 100vw; height: 50px; background-color: #242424;  position: fixed; left: 50%; top: 80px; transition: .5s; transform: translate(-50%, 0px); visibility: hidden; opacity: 0; }
 .nav-item { padding: 0 1.2em; }
 .nav-item a { position: relative; }
 .nav-item a::before { 
