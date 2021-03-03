@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header class="wrap flex-between">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" height="55"></a>
+        <nav class="d-lg-flex d-none">
+            <div class="nav-item">
+                <a href="#">전주 자전거 한마당</a>
+            </div>
+            <div class="nav-item">
+                <a href="./rental.html">자전거 대여</a>
+            </div>
+            <div class="nav-item">
+                <a href="./booking.html">부스 사전 예약</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">후원금 납입</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">자전거 등록</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">부스 등록</a>
+            </div>
+        </nav>
+        <div class="auth d-lg-block d-none">
+            <a href="#"><button class="brown-btn mx-1">로그인</button></a>
+            <a href="#"><button class="brown-btn mx-1">회원가입</button></a>
+        </div>
+        <label for="open-aside" class="icon-bar d-lg-none">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content">
+
+        </div>
+    </aside>
+
+    <div id="sub-visual">
+        <div class="sub-visual-image">
+            <img class="background-image" src="./images/27624481969_a0cbd669c2_c.jpg" alt="image">
+            <div class="pos-center text-center text-white lighter">
+                <div class="fs-9">부스 사전 예약</div>
+                <div class="fs-1 my-2">
+                    메인페이지
+                    <i class="fa fa-angle-right mx-1"></i>
+                    부스 사전 예약
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <form action="/booking" method="post">
+            <div class="form-group">
+                <label for="user_name">고객명</label>
+                <input type="text" id="user_name" class="form-control" name="user_name">
+            </div>
+            <div class="form-group">
+                <label for="user_email">이메일</label>
+                <input type="email" id="user_email" class="form-control" name="user_email">
+            </div>
+            <div class="form-group">
+                <label for="user_phone">휴대폰번호</label>
+                <input type="tel" id="user_phone" class="form-control" name="user_phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+                <label for="password2">비밀번호 확인</label>
+                <input type="password" id="password2" class="form-control" name="password2">
+            </div>
+            <div class="form-group">
+                <label for="booth">예약할 부스</label>
+                <select name="booth" id="booth" class="form-control" data-id="0">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="round">참여할 회차</label>
+                <select name="round" id="round" class="form-control">
+                    
+                </select>
+            </div>
+            <div class="flex-col py-3">
+                <button id="booking-btn" class="brown-btn flex-end">사전 예약</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/Booking.js"></script>
+
+    <footer>
+        <div class="container flex-center">Copyright ⓒ JUNJOOJANG 2020 All RIght Reserved.</div>
+    </footer>
+</body>
+</html>
