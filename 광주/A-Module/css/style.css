@@ -151,7 +151,7 @@ p { margin-bottom: 0; line-height: 2em; }
 .black-btn:after{ right:inherit; top:inherit; left:0; bottom:0; }
 .black-btn:hover:before, .black-btn:hover:after{ width:100%; transition: 1s; }
 
-#visual {  border-radius: 0 50px !important;  }
+#visual {  border-radius: 0 45px !important; overflow: hidden; }
 .visual-btn {
     background: none;
     color: #fff;
@@ -161,7 +161,7 @@ p { margin-bottom: 0; line-height: 2em; }
     border-radius: 30px;
 }
 .visual-btn:hover { background-color: #fff; color: #191919; }
-
+ 
 .search input { 
     font-size: 0.9em ;  
     color: #000; 
@@ -261,7 +261,7 @@ header:hover .nav-background { visibility: visible; opacity: 1; }
     width: 2em;
     height: 2em;
     margin-bottom: 0;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .icon-bar > span {
@@ -414,6 +414,6 @@ aside {
 
 /* < footer */
 
-footer { background-color: #f7f7f7; }
+footer { background-color: #f7f7f7; } 
 
 /* > footer */
