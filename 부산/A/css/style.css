@@ -121,7 +121,7 @@ header { height: 100px; }
 .nav-item a:hover::before { width: 100%; left: 0; }
 
 .auth { padding: 0 .3em; }
-.auth a { padding: .5em 1em; color: #222; border-radius: 10px; }
+.auth a { padding: .5em 1.5em; color: #222; border-radius: 10px; }
 .auth:nth-child(4) a { background-color: #ddd; }
 
 .icon-bar {

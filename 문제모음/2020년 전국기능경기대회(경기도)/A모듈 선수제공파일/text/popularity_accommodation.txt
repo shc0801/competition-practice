@@ -1,0 +1,35 @@
+﻿
+1)
+숙박업소 사진 경로 : images/popularity_accommodation/accommodation_1.jpg
+숙박업소 이름 : 라마다 전주
+위치 : 전주시
+별점 : 4.6 
+이용 후기 건수 : 20
+
+2)
+숙박업소 사진 경로 : images/popularity_accommodation/accommodation_2.jpg
+숙박업소 이름 : 리안호텔 전주
+위치 : 전주시 전주한옥마을 도보 3분
+별점 : 4.7
+이용 후기 건수 : 7
+
+3)
+숙박업소 사진 경로 : images/popularity_accommodation/accommodation_3.jpg
+숙박업소 이름 : 전주 키마호텔
+위치 : 전주시 전주버스터미널 차량7분
+별점 : 3.9
+이용 후기 건수 : 62
+
+4)
+숙박업소 사진 경로 : images/popularity_accommodation/accommodation_4.jpg
+숙박업소 이름 : 전주 더씨티 호텔
+위치 : 전주시 전주역 차량 14분
+별점 : 4.4
+이용 후기 건수 : 348
+
+5)
+숙박업소 사진 경로 : images/popularity_accommodation/accommodation_5.jpg
+숙박업소 이름 : 전주 비지트호텔
+위치 : 전주시 전주역 차량 5분
+별점 : 4.2
+이용 후기 건수 : 101
