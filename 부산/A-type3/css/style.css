@@ -176,7 +176,7 @@ aside {
     left: 100%; top: 0;
     transition: .5s;
 
-    padding-top: 10px;
+    padding-top: 50px;
 }
 #open-aside:checked ~ aside { opacity: 1; visibility: visible; }
 #open-aside:checked ~ aside > .aside-content { left: 20%; }
