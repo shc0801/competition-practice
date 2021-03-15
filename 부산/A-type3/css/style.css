@@ -102,9 +102,9 @@ p { margin-bottom: 0; line-height: 1.7em; }
 .header h3 { font-size: 30px; color: #3e4149; font-weight: bold; }
 .header h4 { font-size: 15px; color: #32435F; font-weight: bold; }
 
-header { height: 100px; }
+header { height: 100px; padding: 0 30px; }
 
-.nav-item { padding: 0 .8em; color: #3e4149; }
+.nav-item { padding: 0 .8em; color: #222; }
 .nav-item:nth-child(3) { border-right: 1px solid #ddd; }
 .nav-item a { position: relative; }
 .nav-item a::before { 
@@ -115,16 +115,16 @@ header { height: 100px; }
     position: absolute;
     left: 50%; bottom: -7px;
     transition: .2s;
-    z-index: 1000;
 
     content: '';
 }
 .nav-item a:hover { color: #32435F; }
 .nav-item a:hover::before { width: 100%; left: 0; }
 
-.auth { padding: 0 .3em; }
-.auth a { padding: .5em 1.5em; color: #222; border-radius: 10px; }
-.auth:nth-child(4) a { background-color: #ddd; }
+.auth { color: #222; }
+.auth a { padding: .5em 1.5em; border-radius: 10px; }
+.auth a:first-child { background-color: #ddd; }
+.auth a:hover { color: #32435F; }
 
 .icon-bar {
     width: 2.2em;
@@ -140,7 +140,7 @@ header { height: 100px; }
     display: block;
 
     margin-top: calc(1.8em / 3);
-    border-top: 2px solid rgba(41, 40, 40, 0.67);
+    border-top: 1px solid rgba(41, 40, 40, 0.67);
     margin-left: auto;
 }
 .icon-bar > span:nth-child(1) { width: 2.2em; margin-top: 5px; }
@@ -153,13 +153,12 @@ aside {
     height: 100%;
 
     position: fixed;
-    left: 0; top: 100px;
+    left: 0; top: 0;
     transition: .5s;
     z-index: 999;
 
     visibility: hidden;
     opacity: 0;
-    border-top: 2px solid #333;
 }
 .aside-background {
     width: 100%;
@@ -167,7 +166,6 @@ aside {
     background-color: rgba(0, 0, 0, 0.7);
 
     position: absolute;
-    left: 0; top: 0;
 }
 .aside-content {
     width: 100%;
@@ -184,9 +182,8 @@ aside {
 #open-aside:checked ~ aside > .aside-content { left: 20%; }
 
 #visual { height: 750px; position: relative; overflow: hidden; margin-top: 40px; box-shadow: 0 10px 20px #000c; }
-.visual-background { height: 550px; background: linear-gradient(150deg, rgb(50, 67, 95), rgb(82, 97, 106));
-     position: absolute; }
-.visual-image { width: calc(95vw * 3); height: 100%; position: absolute; z-index: 100;  }
+.visual-background { height: 650px; background: linear-gradient(150deg, rgb(50, 67, 95), rgb(82, 97, 106)); position: absolute; }
+.visual-image { width: calc(95vw * 3); height: 100%; position: absolute; }
 .visual-image > img { width: 95vw; height: 100%; object-fit: cover; filter: brightness(70%);  }
 .visual-text { text-align: center; color: #fff; }
 .visual-btn {
