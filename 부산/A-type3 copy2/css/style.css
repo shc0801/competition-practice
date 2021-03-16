@@ -185,7 +185,7 @@ aside {
 .visual-background { height: 650px; background: linear-gradient(150deg, rgb(50, 67, 95), rgb(82, 97, 106)); position: absolute; }
 .visual-image { width: calc(95vw * 3); height: 100%; position: absolute; display: flex; }
 .visual-image > img { width: 95vw; height: 100%; object-fit: cover; filter: brightness(70%);  }
-.visual-text { text-align: center; color: #fff; z-index: 10; }
+.visual-text { text-align: center; color: #fff; }
 .visual-btn {
     background: none;
 
@@ -227,7 +227,6 @@ aside {
     position: relative;
     top: 38.2%;
     transform: translateX(-50%);
-    z-index: 1000;
 
     border: 1px solid #fff;
     
@@ -329,7 +328,6 @@ x = 8.333... */
     animation-delay: calc(-12s + 1s);
     
     overflow: hidden;
-    opacity: 0;
     margin-top: 30px;
 }
 .visual-text-1 { animation-name: font-1; }
@@ -375,7 +373,7 @@ x = 8.333... */
 /*  */
 
 @media (max-width: 768px) {
-    header { padding: 0 1em !important; }
+    header { padding: 0 1em; }
     .visual-text > h1 { font-size: 1.5em; } 
     
     .label:nth-child(1) { margin-top: 450px; }
