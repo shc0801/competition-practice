@@ -202,7 +202,7 @@ aside {
 
 /*  */
 
-.labels {
+.sidebar {
     height: 100%;
 
     display: flex;
@@ -211,7 +211,7 @@ aside {
     position: absolute;
     left: 5vw;
 }
-.labels::after { 
+.sidebar::after { 
     width: .5px;
     height: 100%;
     background-color: #fffb;
@@ -220,7 +220,7 @@ aside {
 
     content: '';
 }
-.labels::before {
+.sidebar::before {
     width: 25px;
     height: 25px;
 
@@ -250,9 +250,8 @@ aside {
 
     position: relative;
     transform: translateX(-50%);
-    z-index: 1000;
 
-    margin: 1.2em 0;
+    margin: 20px 0;
 }
 .label span {
     width: 8px;
@@ -337,7 +336,7 @@ x = 8.333... */
 .visual-text-2 { animation-name: font-2; }
 .visual-text-3 { animation-name: font-3; }
 
-.labels::before {
+.sidebar::before {
     animation-name: side;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -348,24 +347,24 @@ x = 8.333... */
     0%      { top: 38.2%; }
     8.333%  { top: 38.2%; }
 
-    33.222% { top: 47%; }
-    41.666% { top: 47%; }
+    33.222% { top: 47.2%; }
+    41.666% { top: 47.2%; }
 
-    66.555% { top: 55.8%; }
-    76.888% { top: 55.8%; }
+    66.555% { top: 56.2%; }
+    76.888% { top: 56.2%; }
 
     100%    { top: 38.2%; }
 }
 
 /* top: 38.2%; */
-/* top: 47%; */
-/* top: 55.8%; */
+/* top: 47.2%; */
+/* top: 56.2%; */
 
 /* + 27.8 */
 
 /* top: 66%; */
-/* top: 74.8%; */
-/* top: 83.6%; */
+/* top: 75%; */
+/* top: 84%; */
 
 .label label {
     animation-duration: 12s;
@@ -385,11 +384,11 @@ x = 8.333... */
         0%      { top: 66%; }
         8.333%  { top: 66%; }
     
-        33.222% { top: 74.8%; }
-        41.666% { top: 74.8%; }
+        33.222% { top: 75%; }
+        41.666% { top: 75%; }
     
-        66.555% { top: 83.6%; }
-        76.888% { top: 83.6%; }
+        66.555% { top: 84%; }
+        76.888% { top: 84%; }
     
         100%    { top: 66%; }
     }
