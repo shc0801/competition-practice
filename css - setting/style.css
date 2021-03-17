@@ -264,7 +264,7 @@ x = 8.333... */
 
 @keyframes move {
     0%      { left: 0%; }
-    8.333%  { left: 0%; }
+    8.333%   { left: 0%; }
 
     33.222% { left: -100%; }
     41.555% { left: -100%; }
@@ -284,7 +284,7 @@ x = 8.333... */
 
 @keyframes font-1 {
     0%      { width: 650px; opacity: 1; }
-    8.333% { width: 650px; opacity: 1; }
+    8.333%  { width: 650px; opacity: 1; }
 
     33.222% { width: 650px; opacity: 0; }
     41.555% { width: 650px; opacity: 0; }
@@ -296,7 +296,7 @@ x = 8.333... */
 }
 @keyframes font-2 {
     0%      { width: 0; opacity: 0; }
-    8.333% { width: 0; opacity: 0; }
+    8.333%  { width: 0; opacity: 0; }
 
     33.222% { width: 650px; opacity: 1; }
     41.555% { width: 650px; opacity: 1; }
@@ -308,7 +308,7 @@ x = 8.333... */
 }
 @keyframes font-3 {
     0%      { width: 650px; opacity: 0; }
-    8.333% { width: 650px; opacity: 0; }
+    8.333%  { width: 650px; opacity: 0; }
 
     33.222% { width: 0; opacity: 0; }
     41.555% { width: 0; opacity: 0; }
@@ -343,7 +343,7 @@ x = 8.333... */
 
 @keyframes side {
     0%      { top: 38.2%; }
-    8.333%  { top: 38.2%; }
+    8.333%   { top: 38.2%; }
 
     33.222% { top: 47.2%; }
     41.555% { top: 47.2%; }
@@ -375,7 +375,7 @@ x = 8.333... */
    
     @keyframes side {
         0%      { top: 66%; }
-        8.333%  { top: 66%; }
+        8.333%   { top: 66%; }
     
         33.222% { top: 75%; }
         41.555% { top: 75%; }
@@ -389,7 +389,7 @@ x = 8.333... */
 
 #job-seeker .row > div { position: relative; }
 #job-seeker .row > div::after { 
-    font-size: 5em;
+    font-size: 5em; 
     font-weight: bold;
     color: rgb(238, 238, 238);
 
