@@ -376,6 +376,7 @@ x = 8.333... */
 
 @media (max-width: 768px) {
     header { padding: 0 1em !important; }
+    #visual { margin-top: 10px; }
     .visual-text > h1 { font-size: 1.5em; } 
     
     .label:nth-child(1) { margin-top: 450px; }
