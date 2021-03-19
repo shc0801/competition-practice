@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <script src="./js/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="open-aside" hidden>
+    <header>
+        <div class="wrap flex-between h-100">
+            <a href="#" class="logo background">
+            </a>
+            <nav class="d-lg-flex d-none">
+                <div class="nav-item drop">
+                    <a href="#">메인페이지</a>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">전북대표축제</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">개요 / 연혁</a>
+                        <a class="px-2" href="#">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">독자와의 만남</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">예약하기</a>
+                        <a class="px-2" href="#">예약확인</a>
+                    </div>
+                </div>
+                <div class="nav-item drop">
+                    <a href="#">종합지원센터</a>
+                    <div class="drop-menu text-center">
+                        <a class="px-2" href="#">공지사항</a>
+                        <a class="px-2" href="#">센터 소개</a>
+                        <a class="px-2" href="#">관광정보</a>
+                        <a class="px-2" href="#">데이터 공개</a>
+                        <a class="px-2" href="#">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div class="nav-background"></div>
+            </nav>
+            <div class="menu fs-n4">
+                <div class="menu-top flex-between pt-1">
+                    <div class="lang-area flex-center">
+                        <div class="lang-KOR px-2">
+                            <a href="#">한국어</a>
+                        </div>
+                        <div class="lang-ENG px-2">
+                            <a href="#">English</a>
+                        </div>
+                        <div class="lang-CHI px-2">
+                            <a href="#">中文(简体)</a>
+                        </div>
+                    </div>
+                    <div class="auth pl-3">
+                        <a class="px-1" href="#">로그인</a>
+                        <a class="px-1" href="#">회원가입</a>
+                    </div>
+                </div>
+                <div class="utility flex-between mt-2 pl-4">
+                    <button class="header-btn px-2 py-1 ml-5">전라북도청</button>
+                    <div class="search">
+                        <input class="py-1 px-2" type="text" placeholder="검색어를 입력해주세요">
+                    </div>
+                </div>
+            </div>
+            <label for="open-aside" class="icon-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <aside class="d-lg-none">
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4">
+            <input class="py-1 px-2" type="text" placeholder="검색어를 입력해주세요">
+            <div>
+                <div class="lang d-flex py-3">
+                    <div class="lang-KOR">
+                        <a href="#">한국어</a>
+                    </div>
+                    <div class="lang-ENG pl-3 pr-2">
+                        <a href="#">English</a>
+                    </div>
+                    <div class="lang-CHI px-2">
+                        <a href="#">中文(简体)</a>
+                    </div>
+                    <button class="header-btn px-2 py-1 ml-5">전라북도청</button>
+                </div>
+                <div class="auth pb-3">
+                    <a href="#">로그인</a>
+                    <a class="pl-3 pr-2" href="#">회원가입</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">HOME</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">전북 대표 축제</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">축제 정보</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">축제 일정</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">환율안내</a>
+                </div>
+                <div class="nav--item py-3">
+                    <a href="#">종합지원센터</a>
+                    <div class="nav--item flex-col py-3 pl-3 fs-n1">
+                        <a class="py-1" href="#">공지사항</a>
+                        <a class="py-1" href="#">센터 소개</a>
+                        <a class="py-1" href="#">관광정보 문의</a>
+                        <a class="py-1" href="#">데이터 공개</a>
+                        <a class="py-1" href="#">찾아오시는 길</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="navigation position-relative">
+        <div class="w-100 h-100 navigation-image">
+            <img class="background-image" src="./images/02.비주얼이미지/1.jpg" alt="">
+        </div>
+        <div class="pos-center text-center mt-3">
+            <div class="fs-9 text-white font-weight-lighter">전화번호</div>
+            <div class="fs-n1 text-white mt-2">
+                전북 축제 On!
+                <i class="fa fa-angle-right mx-1"></i>
+                종합지원센터
+                <i class="fa fa-angle-right mx-1"></i>
+                전화번호
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        
+    </div>
+
+    <script src="/js/Phone.js"></script>
+</body>
+</html>
