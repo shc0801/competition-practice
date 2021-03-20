@@ -8,7 +8,7 @@ class App {
         this.phones = this.phones.items;
         
         let { type } = location.getQueryString();
-        type = !["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n"].includes(type) ? "전체" : type;
+        type = !["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n"].includes(type) ? "a" : type;
         $(`.${type}`).addClass("btn-filled");
         this.render();
     }

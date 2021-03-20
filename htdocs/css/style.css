@@ -102,6 +102,7 @@ p { margin-bottom: 0; line-height: 2em; }
 .cell-90 { max-width: 90%; flex: 0 0 90%; }
 .cell-15 { max-width: 15%; flex: 0 0 15%; }
 .cell-25 { max-width: 25%; flex: 0 0 25%; }
+.cell-65 { max-width: 65%; flex: 0 0 65%; }
 
 .border { border: 1px solid #ddd; }
 .border-gray { border: 1px solid #9c836a; }
@@ -202,7 +203,7 @@ hr { width: 30px; height: 1px; background-color: #af6666; border: none; }
 .card-header { border-radius: 10px 10px 0 0 !important; overflow: hidden; }
 .card-header > img { height: 193px; transition: 1s; border-radius: 10px 10px 0 0; }
 .card:hover img { transform: scale(1.1); }
-.card-footer { width: 80%; margin: 0 auto; background: none !important; }
+.card-footer { width: 90%; margin: 0 auto; background: none !important; }
 
 /* < header */
 

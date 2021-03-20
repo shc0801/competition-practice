@@ -14,7 +14,7 @@
         .btn-filled { background-color: #9c836a; color: #fff; border: 1px solid #9c836a; }
 
         .history-title { width: 22%; font-size: 2em; font-weight: bold; border-top: 4px solid #333; }
-        .history-title + div { width: 78%; border-top: 2px solid #333; }
+        .history-title + div { width: 78%; border-top: 4px solid #333; }
     </style>
 </head>
 <body>
@@ -153,77 +153,20 @@
     </div>
 
     <div class="container py-5">
-        <div class="row flex-center">
-            <a href="?type=a" class="brown-btn a mx-1">2021년</a>
-            <a href="?type=b" class="brown-btn b mx-1">2020년</a>
-            <a href="?type=c" class="brown-btn c mx-1">2019년</a>
-            <a href="?type=d" class="brown-btn d mx-1">2018년</a>
-            <a href="?type=e" class="brown-btn e mx-1">2017년</a>
+        <div class="flex-between">
+            <div class="row flex-center">
+                <a href="?type=2021" class="brown-btn 2021 mx-1">2021년</a>
+                <a href="?type=2020" class="brown-btn 2020 mx-1">2020년</a>
+                <a href="?type=2019" class="brown-btn 2019 mx-1">2019년</a>
+                <a href="?type=2018" class="brown-btn 2018 mx-1">2018년</a>
+                <a href="?type=2017" class="brown-btn 2017 mx-1">2017년</a>
+            </div>
+            <button data-toggle="modal" data-target="#write" class="brown-btn">글쓰기</button>
         </div>
 
-        <div class="d-flex pt-4">
+        <div class="d-flex pt-5">
             <div class="history-title mr-5 ">2021</div>
             <div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">12</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">11</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">10</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">9</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">8</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">7</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">6</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">5</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">4</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">3</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">2</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
-                <div class="t-row text-left">
-                    <div class="cell-10"><strong class="fs-5">1</strong></div>
-                    <div class="cell-60">부산 해외취업지원센터, 일학습과정개발센터 신설</div>
-                    <div class="cell-25"><button class="brown-btn mx-1">수정</button><button class="brown-btn mx-1">삭제</button></div>
-                </div>
             </div>
         </div>
     </div>
@@ -231,9 +174,46 @@
     <div id="write" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-body flex-center">
-                    <div class="title text-gray">연혁글쓰기</div>
+                <div class="modal-header">
+                    <div class="fs-3">연혁글쓰기</div>
                 </div>
+                <form id="write-history" action="" class="modal-body">
+                    <div class="form-group">
+                        <label for="write-content">연혁내용</label>
+                        <input id="write-content" class="form-control" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="write-date">연혁일자</label>
+                        <input id="write-date" class="form-control" type="date" required>
+                    </div>
+                    <div class="form-group flex-col">
+                        <button class="brown-btn flex-end">글쓰기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mod" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <input id="id" type="hidden">
+                <div class="modal-header">
+                    <div class="fs-3">연혁글쓰기</div>
+                </div>
+                <form id="mod-history" action="" class="modal-body">
+                    <div class="form-group">
+                        <label for="mod-content">연혁내용</label>
+                        <input id="mod-content" class="form-control" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mod-date">연혁일자</label>
+                        <input id="mod-date" class="form-control" type="date" required>
+                    </div>
+                    <div class="form-group flex-col">
+                        <button class="brown-btn flex-end">글쓰기</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
