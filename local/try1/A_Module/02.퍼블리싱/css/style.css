@@ -21,6 +21,7 @@ p { margin-bottom: 0; line-height: 1.7em; }
 .flex-col-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .flex-col-between { display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
 .between-end { display: flex; justify-content: space-between; align-items: flex-end; }
+.flex-start { align-self: flex-start; }
 .flex-end { align-self: flex-end; }
 
 .fs-n5 { font-size: 0.6em; }
@@ -42,13 +43,15 @@ p { margin-bottom: 0; line-height: 1.7em; }
 .bold { font-weight: bold; }
 .lighter { font-weight: lighter; }
 
-.title { font-size: 1.1em; font-weight: 600; }
+.text-ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.title { font-size: 1.2em; font-weight: 600; }
 .text-black { color: #444444; }
 .text-worange { color: #FDD692; }
 .text-orange { color: #EC7357; }
 .text-dbrown { color: #754F44; }
 .text-brown { color: #9c836a; }
-.text-gray { color: #fffb }
+.text-gray { color: gray }
 
 .bg-black { background-color: #444444; }
 .bg-worange { background-color: #FDD692; }
@@ -78,12 +81,14 @@ p { margin-bottom: 0; line-height: 1.7em; }
 .cell-90 { max-width: 90%; flex: 0 0 90%; }
 .cell-15 { max-width: 15%; flex: 0 0 15%; }
 .cell-25 { max-width: 25%; flex: 0 0 25%; }
+.cell-65 { max-width: 65%; flex: 0 0 65%; }
 
 .pos-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .background { background-repeat: no-repeat; background-size: cover; }
 .image { width: 100%; height: 100%; object-fit: cover; }
 .background-image { width: 100%; height: 100%; position: absolute; object-fit: cover; filter: brightness(50%); }
-hr { width: 30px; height: 1px; background-color: #af6666; border: none; }
+hr { width: 25px; height: .5px; border: none; background-color: #666666; }
+.rotate { transform: rotate(90deg); }
 
 .brown-btn {
     background: none;
@@ -147,11 +152,12 @@ hr { width: 30px; height: 1px; background-color: #af6666; border: none; }
 .orange-btn:hover::before { left: 150%; }
 .obtn-filled { background-color: #EC7357; color: #fff; border: 1px solid #EC7357; }
 
-.card { box-shadow: 0 39px 67px 3px rgba(179, 179, 179, 0.3); border-radius: 10px !important; cursor: pointer; }
+.card { border-radius: 10px !important; cursor: pointer; }
 .card-header { border-radius: 10px 10px 0 0 !important; overflow: hidden; }
-.card-header > img { height: 193px; transition: 1s; border-radius: 10px 10px 0 0; filter: brightness(70%); }
-.card:hover img { transform: scale(1.1); filter: brightness(100%); }
-.card-footer { width: 80%; margin: 0 auto; background: none !important; }
+.card-header > img { height: 193px; transition: 1s; border-radius: 10px 10px 0 0; }
+.card:hover img { transform: scale(1.1); }
+.card-footer { width: 90%; margin: 0 auto; background: none !important; }
+
 
 header { width: 100vw; background-color: #fff; position: fixed; top: 0; z-index: 1000; }
 header > div { padding: 0 70px; }
@@ -284,7 +290,7 @@ aside {
     border-radius: 30px;
 }
 .visual-btn:hover { background-color: #fff; color: #191919; }
-#sub-visual { height: 300px; position: relative; }
+#sub-visual { height: 400px; position: relative; }
 #sub-visual span { opacity: 0.8; }
 
 /*  */
@@ -456,13 +462,29 @@ x = 8.333... */
     .brown-btn, .orange-btn { padding: .4em 1.2em; }
 }
 
-#notice:checked ~ .row .orange-btn:nth-child(1) { background-color: #EC7357; border: 1px solid #EC7357; color: #fff; }
-#news:checked ~ .row .orange-btn:nth-child(2) { background-color: #EC7357; border: 1px solid #EC7357; color: #fff; }
-#take:checked ~ .row .orange-btn:nth-child(3) { background-color: #EC7357; border: 1px solid #EC7357; color: #fff; }
-#info:checked ~ .row .orange-btn:nth-child(4) { background-color: #EC7357; border: 1px solid #EC7357; color: #fff; }
+#notice:checked ~ .menu label:nth-child(1) { background-color: #9c836a; color: #fff; }
+#news:checked ~ .menu label:nth-child(2) { background-color: #9c836a; color: #fff; }
+#take:checked ~ .menu label:nth-child(3) { background-color: #9c836a; color: #fff; }
+#info:checked ~ .menu label:nth-child(4) { background-color: #9c836a; color: #fff; }
 
-.list { height: 200px; position: relative; border-top: 2px solid #EC7357; }
-.list > div { width: 100%; position: absolute; }
+.menu { height: 250px; }
+.menu label {  
+    width: 100%;
+    height: 50px;
+
+    color: #444444;
+
+    display: flex;
+
+    padding: 0 .8em;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.menu label:nth-child(1) { border-top: 1px solid #ddd; }
+
+.list { height: 250px; position: relative; border-top: 1px solid #444444; }
+.list > div { width: 100%; position: absolute; left: 0; top: 0; overflow: hidden; }
 .list .t-row { transition: 0.8s; }
 .list .t-row:nth-child(1) { transition-delay: calc(0.1s * 0); }
 .list .t-row:nth-child(2) { transition-delay: calc(0.1s * 1); }
@@ -475,11 +497,32 @@ x = 8.333... */
 .take .t-row { opacity: 0; transform: translateX(-50px); }
 .info .t-row { opacity: 0; transform: translateX(50px); }
 
+.list .t-head { transition: 0.8s; }
+.list .t-head:nth-child(1) { transition-delay: calc(0.1s * 0); }
+.list .t-head:nth-child(2) { transition-delay: calc(0.1s * 1); }
+.list .t-head:nth-child(3) { transition-delay: calc(0.1s * 2); }
+.list .t-head:nth-child(4) { transition-delay: calc(0.1s * 3); }
+.list .t-head:nth-child(5) { transition-delay: calc(0.1s * 4); }
+
+.notice .t-head { opacity: 0; transform: translateX(-50px); }
+.news .t-head { opacity: 0; transform: translateX(50px); }
+.take .t-head { opacity: 0; transform: translateX(-50px); }
+.info .t-head { opacity: 0; transform: translateX(50px); }
+
 #notice:checked ~ .list .notice .t-row,
 #news:checked ~ .list .news .t-row,
 #take:checked ~ .list .take .t-row,
 #info:checked ~ .list .info .t-row {
     opacity: 1; transform: translateX(0);
 }
+
+#notice:checked ~ .list .notice .t-head,
+#news:checked ~ .list .news .t-head,
+#take:checked ~ .list .take .t-head,
+#info:checked ~ .list .info .t-head {
+    opacity: 1; transform: translateX(0);
+}
+
+#event { background-color: #f7f7f7; }
 
 footer { height: 50px; background-color: rgb(58, 58, 58); color: #fff; line-height: 50px; }

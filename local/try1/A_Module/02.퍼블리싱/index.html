@@ -401,123 +401,262 @@
             </div>
         </div>
     </div>
-    <div class="container py-5">
-        <div class="header text-center pb-4">
-            <hr class="bg-orange mx-auto">
-            <div class="title text-orange">새소식</div>
-            <div class="mt-2 lighter fs-5">최근 소식을 <strong>알려드립니다</strong></div>
+    <div class="container py-5 mt-5">
+        <div class="header text-center pb-4 ">
+            <hr class="mx-auto my-2">
+            <div class="title text-gray">새소식</div>
+            <div class="py-2 fs-7 text-gray bold">NEWS</div>
         </div>
 
-        <input type="radio" id="notice" name="table" hidden checked>
-        <input type="radio" id="news" name="table" hidden>
-        <input type="radio" id="take" name="table" hidden>
-        <input type="radio" id="info" name="table" hidden>
+        <div class="row flex-between pt-1">
+            <input type="radio" id="notice" name="table" hidden checked>
+            <input type="radio" id="news" name="table" hidden>
+            <input type="radio" id="take" name="table" hidden>
+            <input type="radio" id="info" name="table" hidden>
 
-        <div class="row flex-center pb-4">
-            <label for="notice" class="orange-btn mx-1">공지사항</label>
-            <label for="news" class="orange-btn mx-1">보도자료</label>
-            <label for="take" class="orange-btn mx-1">채용공고</label>
-            <label for="info" class="orange-btn mx-1">입찰정보</label>
+            <div class="menu col-lg-2 col-md-12 flex-col flex-start pb-1">
+                <label for="notice" class="text-brown flex-between"><span>공지사항</span><i class="fa fa-bullhorn"></i></label>
+                <label for="news" class="flex-between"><span>보도자료</span><i class="fa fa-newspaper-o"></i></label>
+                <label for="take" class="flex-between"><span>채용공고</span><i class="fa fa-user"></i></label>
+                <label for="info" class="flex-between"><span>입찰정보</span><i class="fa fa-info"></i></label>
+            </div>
+            <div class="list col-lg-10 col-md-12">
+                <div class="notice">
+                    <div class="t-head">
+                        <div class="cell-10">번호</div>
+                        <div class="cell-60">제목</div>
+                        <div class="cell-15">조회</div>
+                        <div class="cell-15">작성일</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">공직자 취업ㆍ행위제한 신고센터 안내</div>
+                        <div class="cell-15">20</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">제26회 바다의 날」 기념 해양수산발전 유공 정부포상을 위한 공개검증</div>
+                        <div class="cell-15">210</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">코로나19 「개인안심번호」 도입 및 이용 안내</div>
+                        <div class="cell-15">84</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">홈페이지 서비스 일시 중지 알림(3월 3일 18시부터 21시까지)</div>
+                        <div class="cell-15">65</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">해양문화아카데미 자료집 신청 기간 연장 안내</div>
+                        <div class="cell-15">121</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="t-head">
+                        <div class="cell-10">번호</div>
+                        <div class="cell-60">제목</div>
+                        <div class="cell-15">조회</div>
+                        <div class="cell-15">작성일</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">공직자 취업ㆍ행위제한 신고센터 안내</div>
+                        <div class="cell-15">20</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">제26회 바다의 날」 기념 해양수산발전 유공 정부포상을 위한 공개검증</div>
+                        <div class="cell-15">210</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">코로나19 「개인안심번호」 도입 및 이용 안내</div>
+                        <div class="cell-15">84</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">홈페이지 서비스 일시 중지 알림(3월 3일 18시부터 21시까지)</div>
+                        <div class="cell-15">65</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">해양문화아카데미 자료집 신청 기간 연장 안내</div>
+                        <div class="cell-15">121</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                </div>
+                <div class="take">
+                    <div class="t-head">
+                        <div class="cell-10">번호</div>
+                        <div class="cell-60">제목</div>
+                        <div class="cell-15">조회</div>
+                        <div class="cell-15">작성일</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">공직자 취업ㆍ행위제한 신고센터 안내</div>
+                        <div class="cell-15">20</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">제26회 바다의 날」 기념 해양수산발전 유공 정부포상을 위한 공개검증</div>
+                        <div class="cell-15">210</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">코로나19 「개인안심번호」 도입 및 이용 안내</div>
+                        <div class="cell-15">84</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">홈페이지 서비스 일시 중지 알림(3월 3일 18시부터 21시까지)</div>
+                        <div class="cell-15">65</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">해양문화아카데미 자료집 신청 기간 연장 안내</div>
+                        <div class="cell-15">121</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="t-head">
+                        <div class="cell-10">번호</div>
+                        <div class="cell-60">제목</div>
+                        <div class="cell-15">조회</div>
+                        <div class="cell-15">작성일</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">공직자 취업ㆍ행위제한 신고센터 안내</div>
+                        <div class="cell-15">20</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">제26회 바다의 날」 기념 해양수산발전 유공 정부포상을 위한 공개검증</div>
+                        <div class="cell-15">210</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">코로나19 「개인안심번호」 도입 및 이용 안내</div>
+                        <div class="cell-15">84</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">홈페이지 서비스 일시 중지 알림(3월 3일 18시부터 21시까지)</div>
+                        <div class="cell-15">65</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                    <div class="t-row">
+                        <div class="cell-10">442</div>
+                        <div class="cell-60 text-left text-ellipsis pl-3">해양문화아카데미 자료집 신청 기간 연장 안내</div>
+                        <div class="cell-15">121</div>
+                        <div class="cell-15 text-ellipsis">2021. 03. 16</div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="list">
-            <div class="notice">
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
+    <div id="event" class="py-5 mt-5">
+        <div class="container"> 
+            <div class="header text-center mb-2">
+                <hr class="mx-auto">
+                <div class="title">행사</div>
+                <div class="py-2 fs-7 bold">EVENTS</div>
             </div>
-            <div class="news">
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 px-3 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/03/1.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-2">
+                                <strong class="text-dbrown fs-n2">BEST EVENT</strong>
+                                <div>
+                                    <span class="bold fs-1">집가고싶다</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="bold">축제 기간</small>
+                                    <span class="ml-2 mb-0">2021-03-04</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                        </div>
+                    </div>
                 </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
+                <div class="col-lg-4 col-md-6 px-3 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/03/2.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-2">
+                                <strong class="text-dbrown fs-n2">BEST EVENT</strong>
+                                <div>
+                                    <span class="bold fs-1">집가고싶다</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="bold">축제 기간</small>
+                                    <span class="ml-2 mb-0">2021-03-04</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                        </div>
+                    </div>
                 </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-            </div>
-            <div class="take">
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
-                </div>
-                <div class="t-row">
-                    <div class="cell-10">날짜</div>
-                    <div class="cell-50">제목</div>
-                    <div class="cell-30">내용</div>
-                    <div class="cell-10">기타</div>
+                <div class="col-lg-4 col-md-6 px-3 my-3">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <img class="image" src="./images/03/3.jpg" alt="">
+                        </div>
+                        <div class="card-body pb-2">
+                            <div class="px-2">
+                                <strong class="text-dbrown fs-n2">BEST EVENT</strong>
+                                <div>
+                                    <span class="bold fs-1">집가고싶다</span>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="bold">축제 기간</small>
+                                    <span class="ml-2 mb-0">2021-03-04</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer px-0">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container py-5">
-        <div class="flex-between">
-            <div class="header">
-                <hr class="bg-orange">
-                <div class="title text-orange">유네스코 인류무형유산</div>
-            </div>
-            <div class="pt-3">
-                <label href="?type=2021" class="brown-btn 2021 mx-1">2021년</label>
-                <label href="?type=2020" class="brown-btn 2020 mx-1">2020년</label>
-                <label href="?type=2019" class="brown-btn 2019 mx-1">2019년</label>
-                <label href="?type=2018" class="brown-btn 2018 mx-1">2018년</label>
-                <label href="?type=2017" class="brown-btn 2017 mx-1">2017년</label>
-            </div>
+    <footer>
+        <div class="container">
+
         </div>
-    </div>
+    </footer>
 </body>
 </html>                                                                        
