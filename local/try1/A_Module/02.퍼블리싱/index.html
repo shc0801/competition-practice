@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <input type="checkbox" name="open-aside" id="open-aside" hidden>
+    <header>
+        <div class="header-top d-lg-block d-none">
+            <div class="w-100 h-100 wrap flex-between d-lg-flex d-none">
+                <div class="header-top-menu h-100 flex-center ml-0">
+                    <a href="#"><div>유내스코 등재유산</div></a>
+                    <a href="#"><div>3D등재유산</div></a>
+                    <a href="#"><div>기록유산</div></a>
+                    <a href="#"><div>문화재청소개</div></a>
+                    <a href="#"><div>알림 / 소식</div></a>
+                </div>
+                <div class="utility d-flex">
+                    <div class="auth">
+                        <a class="mx-1" href="#">로그인</a>
+                        <a class="mx-1" href="#">회원가입</a>
+                    </div>
+                    <a class="mx-2" href="#">문의하기</a>
+                    <select class="ml-5">
+                        <option value="한국어">한국어</option>
+                        <option value="English">English</option>
+                        <option value="中文(简体)">中文(简体)</option>
+                        <option value="日本語">日本語</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="w-100 h-100 wrap flex-between">
+                <a href="#"><img src="./images/logo.png" alt="logo" height="45"></a>
+                <nav class="d-lg-flex d-none">
+                    <div class="nav-item">
+                        <a href="./index.html">HOME</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-3">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">무형문화재관리원</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-3">
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">소개</a>
+                                        <div class="mt-2 pt-2"><a href="#">소개</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">일반현황</a>
+                                        <div class="mt-2 pt-2"><a href="#">설립목적</a></div>
+                                        <div class="mt-2"><a href="#">연혁</a></div>
+                                        <div class="mt-2"><a href="#">역할</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">주요업무계획</a>
+                                        <div class="mt-2 pt-2"><a href="#">주요업무계획</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">조직 및 구성</a>
+                                        <div class="mt-2 pt-2"><a href="#">조직 및 구성</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전화번호</a>
+                                        <div class="mt-2 pt-2"><a href="#">전화번호</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./sub1.html">무형문화재 현황</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-5">
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전통 공연·예술</a>
+                                        <div class="mt-2 pt-2"><a href="#">전통 공연·예술</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전통기술</a>
+                                        <div class="mt-2 pt-2"><a href="#">전통기술</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">구전 전통 및 표현</a>
+                                        <div class="mt-2 pt-2"><a href="#">구전 전통 및 표현</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전통 생활관습</a>
+                                        <div class="mt-2 pt-2"><a href="#">전통 생활관습</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">의례·의식</a>
+                                        <div class="mt-2 pt-2"><a href="#">의례·의식</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전통 놀이·무예</a>
+                                        <div class="mt-2 pt-2"><a href="#">전통 놀이·무예</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전체 현황</a>
+                                        <div class="mt-2 pt-2"><a href="#">전체 현황</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">행사 안내</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-5">
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">공연</a>
+                                        <div class="mt-2 pt-2"><a href="./sub2.html">월간 공연 일정</a></div>
+                                        <div class="mt-2"><a href="#">연간 공연 일정</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전시</a>
+                                        <div class="mt-2 pt-2"><a href="#">관람 안내</a></div>
+                                        <div class="mt-2"><a href="#">전시실</a></div>
+                                        <div class="mt-2"><a href="#">디지털 체험관</a></div>
+                                        <div class="mt-2"><a href="#">기획 전시실</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">교육</a>
+                                        <div class="mt-2 pt-2"><a href="#">전문 교육</a></div>
+                                        <div class="mt-2"><a href="#">사회 교육</a></div>
+                                        <div class="mt-2"><a href="#">연간 교육일정</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">전승지원</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-5">
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">공방</a>
+                                        <div class="mt-2 pt-2"><a href="#">공방</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">공예품 갤러리</a>
+                                        <div class="mt-2 pt-2"><a href="#">공예품 갤러리</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">전수교육관 현황</a>
+                                        <div class="mt-2 pt-2"><a href="#">전수교육관 현황</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">공개 데이터</a>
+                        <div class="header-sub">
+                            <div class="sub h-100 d-flex">
+                                <div class="sub-utility">
+                                    <a href="#">무형문화재 이슈</a>
+                                    <div class="mt-2">
+                                        <span class="fs-n2 mt-3">"무형문화재 139호 불복장작법"</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-n2">"2019년 4월 30일 등재"</span>
+                                    </div>
+                                </div>
+                                <div class="row sub-menu pl-5">
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">무형문화재 현황 조회</a>
+                                        <div class="mt-2 pt-2"><a href="#">무형문화재 현황 조회</a></div>
+                                    </div>
+                                    <div class="sub-item flex-col mx-5">
+                                        <a class="fs-2 bold" href="#">공연 일정 조회</a>
+                                        <div class="mt-2 pt-2"><a href="#">공연 일정 조회</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="search d-lg-block d-none">
+                    <i class="fa fa-search"></i>
+                </div>
+                <label for="open-aside" class="icon-bar d-lg-none">
+                    <span></span><span></span><span></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <label for="open-aside" class="aside-background"></label>
+        <div class="aside-content px-4 pt-3">
+            <div class="auth">
+                <a href="#">로그인</a>
+                <a class="pl-3" href="#">회원가입</a>
+            </div>
+            <nav class="mt-3">
+                <div>
+                    <a class="title bold text-brown" href="#">무형문화재관리원</a>
+                    <div class="sub-menu pt-2">
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">소개</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">일반현황</a>
+                            <div class="py-2"> 
+                                <div class="mt-2"><a href="#">설립목적</a></div>
+                                <div class="mt-2"><a href="#">연혁</a></div>
+                                <div class="mt-2"><a href="#">역할</a></div>
+                            </div>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">주요업무계획</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">조직 및 구성</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">전화번호</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a class="title bold text-brown" href="#">무형문화재 현황</a>
+                    <div class="sub-menu pt-2">
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">전통 공연·예술</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">전통기술</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">구전 전통 및 표현</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">전통 생활관습</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">의례·의식</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">전통 놀이·무예</a>
+                        </div>
+                        <div class="sub-item mt-1 flex-col">
+                            <a class="fs-2 bold" href="#">전체 현황</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a class="title bold text-brown" href="#">행사 안내</a>
+                    <div class="sub-menu pt-2">
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">공연</a>
+                            <div class="py-2"> 
+                                <div class="mt-2"><a href="./sub2.html">월간 공연 일정</a></div>
+                                <div class="mt-2"><a href="#">연간 공연 일정</a></div>
+                            </div>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">전시</a>
+                            <div class="py-2"> 
+                                <div class="mt-2"><a href="#">관람 안내</a></div>
+                                <div class="mt-2"><a href="#">전시실</a></div>
+                                <div class="mt-2"><a href="#">디지털 체험관</a></div>
+                                <div class="mt-2"><a href="#">기획 전시실</a></div>
+                            </div>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">주요업무계획</a>
+                            <div class="py-2"> 
+                                <div class="mt-2"><a href="#">전문 교육</a></div>
+                                <div class="mt-2"><a href="#">사회 교육</a></div>
+                                <div class="mt-2"><a href="#">연간 교육일정</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a class="title bold text-brown" href="#">전승 지원</a>
+                    <div class="sub-menu pt-2">
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">공방</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">공예품 갤러리</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">전수교육관 현황</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a class="title bold text-brown" href="#">공개 데이터</a>
+                    <div class="sub-menu pt-2">
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">무형문화재 현황 조회</a>
+                        </div>
+                        <div class="sub-item flex-col">
+                            <a class="fs-2 bold" href="#">공연 일정 조회</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="visual">
+        <div class="visual-image">
+            <!-- <img src="./images/02.비주얼이미지/1.jpg" alt="">
+            <img src="./images/02.비주얼이미지/2.jpg" alt="">
+            <img src="./images/02.비주얼이미지/3.jpg" alt=""> -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- <div class="w-100 visual-text visual-text-1 pos-center">
+            <h1>전북축제에 오신것을 환영합니다</h2>
+            <p class="pt-2 lighter">전통ㆍ문화ㆍ축제가 살아 숨쉬는 전북축제는 모두가 하나되어 <br>다양한 경험을 만들어 나아갑니다</p>
+            <button class="visual-btn mt-2">전북축제 ON! 소개</button>
+        </div>
+        <div class="w-100 visual-text visual-text-2 pos-center">
+            <h1>전주의 자랑 전주 비빔밥 축제</h2>
+            <p class="pt-2 lighter">모든것은 너의 마음대로! <br> 비벼봐 신나게! 즐겨봐 맛나게!</p>
+            <button class="visual-btn mt-2">전주 비빔밥 축제 소개</button>
+        </div>
+        <div class="w-100 visual-text visual-text-3 pos-center">
+            <h1>춘향. 사랑을 90th(고)하다</h2>
+            <p class="pt-2 lighter">아름다운 사랑 이야기로 여러분을 초대합니다. <br>남원 광한루에서 사랑하는 친구, 연인, 가족과 함께 꿈 같은 축제를 경험해보세요.</p>
+            <button class="visual-btn mt-2">춘향제 소개</button>
+        </div> -->
+        <div class="sidebar flex-between ml-2">
+            <div class="label">
+                <span class="pos-center"></span>
+            </div>
+            <div class="label">
+                <span class="pos-center"></span>
+            </div>
+            <div class="label">
+                <span class="pos-center"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="header text-center pb-4">
+            <hr class="bg-orange mx-auto">
+            <div class="title text-orange">새소식</div>
+            <div class="mt-2 lighter fs-5">최근 소식을 <strong>알려드립니다</strong></div>
+        </div>
+
+        <input type="radio" id="notice" name="table" hidden checked>
+        <input type="radio" id="news" name="table" hidden>
+        <input type="radio" id="take" name="table" hidden>
+        <input type="radio" id="info" name="table" hidden>
+
+        <div class="row flex-center pb-4">
+            <label for="notice" class="orange-btn mx-1">공지사항</label>
+            <label for="news" class="orange-btn mx-1">보도자료</label>
+            <label for="take" class="orange-btn mx-1">채용공고</label>
+            <label for="info" class="orange-btn mx-1">입찰정보</label>
+        </div>
+
+        <div class="list">
+            <div class="notice">
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+            </div>
+            <div class="take">
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+                <div class="t-row">
+                    <div class="cell-10">날짜</div>
+                    <div class="cell-50">제목</div>
+                    <div class="cell-30">내용</div>
+                    <div class="cell-10">기타</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+        <div class="flex-between">
+            <div class="header">
+                <hr class="bg-orange">
+                <div class="title text-orange">유네스코 인류무형유산</div>
+            </div>
+            <div class="pt-3">
+                <label href="?type=2021" class="brown-btn 2021 mx-1">2021년</label>
+                <label href="?type=2020" class="brown-btn 2020 mx-1">2020년</label>
+                <label href="?type=2019" class="brown-btn 2019 mx-1">2019년</label>
+                <label href="?type=2018" class="brown-btn 2018 mx-1">2018년</label>
+                <label href="?type=2017" class="brown-btn 2017 mx-1">2017년</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>                                                                        
