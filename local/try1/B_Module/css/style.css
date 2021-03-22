@@ -1,15 +1,20 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family:Noto Sans KR;
+    src:url('../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;    
-    font-family: '맑은 고딕', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 label, a, button { user-select: none; }
 a, a:hover { color: inherit; text-decoration: none; }
-ul, li { t_list-style: none; }
+ul, li { list-style: none; }
 p { margin-bottom: 0; line-height: 1.7em; }
 
 .wrap { width: calc(100vw - 5vw); margin: 0 auto; }
@@ -275,7 +280,7 @@ aside {
 
 #visual { height: 700px; position: relative; margin-top: 100px; overflow: hidden; }
 .visual-image > img { width: 100vw; height: 100%; position: absolute; }
-.visual-text { text-align: center; color: #fff; z-index: 10; }
+.visual-text { width: 100vw; text-align: center; color: #fff; z-index: 10; }
 .visual-btn {
     background: none;   
 
@@ -376,46 +381,46 @@ x = 8.333... */
 .visual-image img:nth-child(3) { animation-name: image-3; }
 
 @keyframes font-1 {
-    0%     { opacity: 1; }
-    25.00% { opacity: 1; }
+    0%      { width: 520px; opacity: 1; }
 
-    33.33% { opacity: 0; }
-    58.33% { opacity: 0; }
+    33.33% { width: 520px; opacity: 0; }
+    41.66% { width: 520px; opacity: 0; }
 
-    66.66% { opacity: 0; }
-    91.66% { opacity: 0; }
+    66.66% { width: 0; opacity: 0; }
+    74.99% { width: 0; opacity: 0; }
 
-    100%   { opacity: 1; }
+    100%    { width: 520px; opacity: 1; }
 }
 @keyframes font-2 {
-    0%     { opacity: 0; }
-    25.00% { opacity: 0; }
+    0%      { width: 0; opacity: 0; }
+    8.333% { width: 0; opacity: 0; }
 
-    33.33% { opacity: 1; }
-    58.33% { opacity: 1; }
+    33.33% { width: 520px; opacity: 1; }
 
-    66.66% { opacity: 0; }
-    91.66% { opacity: 0; }
+    66.66% { width: 520px; opacity: 0; }
+    74.99% { width: 520px; opacity: 0; }
 
-    100%   { opacity: 0; }
+    100%    { width: 0; opacity: 0; }
 }
 @keyframes font-3 {
-    0%     { opacity: 0; }
-    25.00% { opacity: 0; }
+    0%      { width: 520px; opacity: 0; }
+    8.333% { width: 520px; opacity: 0; }
 
-    33.33% { opacity: 0; }
-    58.33% { opacity: 0; }
+    33.33% { width: 0; opacity: 0; }
+    41.66% { width: 0; opacity: 0; }
 
-    66.66% { opacity: 1; }
-    91.66% { opacity: 1; }
+    66.66% { width: 520px; opacity: 1; }
 
-    100%   { opacity: 0; }
+    100%    { width: 520px; opacity: 0; }
 }
 
 .visual-text {
+    width: 0;
+    height: 200px;
+    
     animation-duration: 12s;
     animation-iteration-count: infinite;
-    animation-delay: calc(-12s + 1s);
+    animation-delay: calc(-12s + 3s);
     
     overflow: hidden;
     opacity: 0;
