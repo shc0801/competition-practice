@@ -79,6 +79,7 @@ p { margin-bottom: 0; line-height: 1.7em; }
 .cell-70 { max-width: 70%; flex: 0 0 70%; }
 .cell-80 { max-width: 80%; flex: 0 0 80%; }
 .cell-90 { max-width: 90%; flex: 0 0 90%; }
+.cell-100 { max-width: 100%; flex: 0 0 100%; }
 .cell-15 { max-width: 15%; flex: 0 0 15%; }
 .cell-25 { max-width: 25%; flex: 0 0 25%; }
 .cell-65 { max-width: 65%; flex: 0 0 65%; }
@@ -273,10 +274,7 @@ aside {
 #open-aside:checked ~ aside > .aside-content { left: 20%; }
 
 #visual { height: 700px; position: relative; margin-top: 100px; overflow: hidden; }
-.visual-image > div { width: 100vw; height: 100%; position: absolute; }
-.visual-image > div:nth-child(1) { background-color: #faa; }
-.visual-image > div:nth-child(2) { background-color: #afa; }
-.visual-image > div:nth-child(3) { background-color: #aaf; }
+.visual-image > img { width: 100vw; height: 100%; position: absolute; }
 .visual-text { text-align: center; color: #fff; z-index: 10; }
 .visual-btn {
     background: none;   
@@ -368,14 +366,14 @@ x = 8.333... */
     100%    { margin-left : 300px; opacity: 0; }
 }
 
-.visual-image div {
+.visual-image img {
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-delay: calc(-12s + 1s);
 }
-.visual-image div:nth-child(1) { animation-name: image-1; }
-.visual-image div:nth-child(2) { animation-name: image-2; } 
-.visual-image div:nth-child(3) { animation-name: image-3; }
+.visual-image img:nth-child(1) { animation-name: image-1; }
+.visual-image img:nth-child(2) { animation-name: image-2; } 
+.visual-image img:nth-child(3) { animation-name: image-3; }
 
 @keyframes font-1 {
     0%     { opacity: 1; }
@@ -525,4 +523,5 @@ x = 8.333... */
 
 #event { background-color: #f7f7f7; }
 
-footer { height: 50px; background-color: rgb(58, 58, 58); color: #fff; line-height: 50px; }
+footer { height: 130px; background-color: rgb(58, 58, 58); color: #fff; line-height: 50px; }
+footer .item 
